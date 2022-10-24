@@ -1,0 +1,48 @@
+[
+  {
+    "data": {
+      "id": 102,
+      "title": "Firmenich",
+      "thumbnail": "projects_firmenich.jpg",
+      "details": "ui design, and Support",
+      "startdate": "2019-10-10",
+      "enddate": "2020-6-10",
+      "duration": "0.6Y",
+      "pattern": "fullrowdesigntwo",
+      "logo": "./assets/images/firmenich/projects_firmenich.jpg",
+      "type": "Aroma & Perfume B2B",
+      "pagetemplate": [
+        {
+          "projectname": "eRoots",
+          "projectbusinessline": "Firmenich SA is a private Swiss company in the fragrance and flavor business. It is the largest privately owned company in the field and ranks number two worldwide.",
+          "image": "./assets/images/firmenich/forgot_login_screen.png",
+          "description": "Project Login screen detail",
+          "alter": "Firmenich eRoots",
+          "responsibilities": "Generalists working on all design thinking phases. Reports: usability, user research. Collaborate with UX researchers to derive essential insights about the use cases of a product. Mockups and wireframe, Design understanding from client team, understanding of the ideal design process, enhancement, mapbox implementation, Consult with technical team and Manager ",
+          "client": "GSR Business Services PVT Ltd",
+          "software": "Sketch(Mac), Icon Design, HTML/CSS, Mapbox GL In Angular Application",
+          "moredetails": [
+            {
+              "image": "./assets/images/firmenich/project_home_screen.png",
+              "title": "Project Dashboard",
+              "alt": "eroots - project dashboard",
+              "description": "Project home is common dashboard for all different role people, where can be seen registration( new farmer registration), Profiling of farmer, Details of survey management and finally project reporting."
+            },
+            {
+              "image": "./assets/images/firmenich/eroots_system_admin.png",
+              "title": "System Admin Screen",
+              "alt": "eroots - system admin",
+              "description": "System admin has right to look after suppliers, services and various ecosystems, so this page is like a dashboard for system admin."
+            },
+            {
+              "image": "./assets/images/firmenich/project_reporting_screen.png",
+              "title": "Report Screen",
+              "alt": "eroots - reports",
+              "description": "Multiple Power BI report in a single page to show details engagement and performance of farmer, which system grab time to time."
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

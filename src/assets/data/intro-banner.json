@@ -1,0 +1,211 @@
+[
+  {
+    "idTitle": "logo_design",
+    "backgroundColor": "yellow",
+    "size": "14px",
+    "color": "#666666",
+    "xCordinate": "4%",
+    "yCordinate": "10%",
+    "title": "Logo Design",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  },
+  {
+    "idTitle": "adobe_photoshop",
+    "backgroundColor": "pink",
+    "size": "16px",
+    "color": "#666666",
+    "xCordinate": "20%",
+    "yCordinate": "10%",
+    "title": "Adobe Photoshop",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  },
+  {
+    "idTitle": "adobe_illustrator",
+    "backgroundColor": "orange",
+    "size": "16px",
+    "color": "#666666",
+    "xCordinate": "30%",
+    "yCordinate": "15%",
+    "title": "Adobe Illustrator",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  },
+  {
+    "idTitle": "javascript",
+    "backgroundColor": "skyblue",
+    "size": "10px",
+    "color": "#666666",
+    "xCordinate": "35%",
+    "yCordinate": "35%",
+    "title": "JavaScript",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  },
+  {
+    "idTitle": "angular",
+    "backgroundColor": "seagreen",
+    "size": "18px",
+    "color": "#666666",
+    "xCordinate": "40%",
+    "yCordinate": "55%",
+    "title": "Angular",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  },
+  {
+    "idTitle": "git",
+    "backgroundColor": "yellow",
+    "size": "13px",
+    "color": "#666666",
+    "xCordinate": "60%",
+    "yCordinate": "55%",
+    "title": "Git",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  },
+  {
+    "idTitle": "azure_devops",
+    "backgroundColor": "pink",
+    "size": "13px",
+    "color": "#666666",
+    "xCordinate": "10%",
+    "yCordinate": "75%",
+    "title": "Azure DevOps",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  },
+  {
+    "idTitle": "sketch",
+    "backgroundColor": "#A99EB3",
+    "size": "20px",
+    "color": "#666666",
+    "xCordinate": "80%",
+    "yCordinate": "75%",
+    "title": "Sketch",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  },
+  {
+    "idTitle": "rwd_awd",
+    "backgroundColor": "yellow",
+    "size": "13px",
+    "color": "#666666",
+    "xCordinate": "40%",
+    "yCordinate": "25%",
+    "title": "RWD/AWD",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  },
+  {
+    "idTitle": "adobe_xd",
+    "backgroundColor": "red",
+    "size": "13px",
+    "color": "#666666",
+    "xCordinate": "45%",
+    "yCordinate": "35%",
+    "title": "Adobe XD",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  },
+  {
+    "idTitle": "html5",
+    "backgroundColor": "pink",
+    "size": "18px",
+    "color": "#666666",
+    "xCordinate": "20%",
+    "yCordinate": "85%",
+    "title": "HTML5",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  },
+  {
+    "idTitle": "scss",
+    "backgroundColor": "#ffffff",
+    "size": "15px",
+    "color": "#666666",
+    "xCordinate": "70%",
+    "yCordinate": "75%",
+    "title": "SCSS",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  },
+  {
+    "idTitle": "graphic_design",
+    "backgroundColor": "skyblue",
+    "size": "11px",
+    "color": "#666666",
+    "xCordinate": "55%",
+    "yCordinate": "35%",
+    "title": "Grapic Design",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  },
+  {
+    "idTitle": "mapbox",
+    "backgroundColor": "yellow",
+    "size": "12px",
+    "color": "#666666",
+    "xCordinate": "43%",
+    "yCordinate": "85%",
+    "title": "Mapbox",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  },
+  {
+    "idTitle": "balsemiq",
+    "backgroundColor": "#ffffff",
+    "size": "14px",
+    "color": "#666666",
+    "xCordinate": "77%",
+    "yCordinate": "65%",
+    "title": "Balsemiq",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  },
+  {
+    "idTitle": "k6perf_test",
+    "backgroundColor": "skyblue",
+    "size": "13px",
+    "color": "#666666",
+    "xCordinate": "11%",
+    "yCordinate": "30%",
+    "title": "K6 Perf Test",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  },
+  {
+    "idTitle": "jasmin_karma",
+    "backgroundColor": "seagreen",
+    "size": "16px",
+    "color": "#666666",
+    "xCordinate": "20%",
+    "yCordinate": "65%",
+    "title": "Jasmin/Karma",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  },
+  {
+    "idTitle": "agile",
+    "backgroundColor": "skyblue",
+    "size": "11px",
+    "color": "#666666",
+    "xCordinate": "15%",
+    "yCordinate": "35%",
+    "title": "Agile",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  },
+  {
+    "idTitle": "ngrx",
+    "backgroundColor": "skyblue",
+    "size": "11px",
+    "color": "#666666",
+    "xCordinate": "75%",
+    "yCordinate": "39%",
+    "title": "NgRX",
+    "textColor": "rgba(102,102,102,0.9)",
+    "yCordinateHover": "1%"
+  }
+]

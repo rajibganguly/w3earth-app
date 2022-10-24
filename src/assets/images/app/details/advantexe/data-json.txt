@@ -1,0 +1,36 @@
+{
+      "id": 105,
+      "title": "Advantexe",
+      "thumbnail": "projects_advantexe.jpg",
+      "details": "ui coding, ui development",
+      "startdate": "2014-5-13",
+      "enddate": "2014-9-04",
+      "duration": "4M",
+      "pattern": "fullrowdesigntwo",
+      "pagetemplate": [
+        {
+          "projectname": "Advantexe",
+          "projectbusinessline": "The Advantexe team possesses over 25 years of experience in both talent and business simulation development. The Advantexe team has extensive business and training background adding significant insights to the overall development of your company’s solution. We partner with you to provide innovative business simulation-centric solutions that provide high impact and a realistic participant experience that drive engagement and training effectiveness.",
+          "image": "advantexe/advantex.jpg",
+          "description": "B2C application involved with dashboard, learning and complete ratio details. Different types of users also tracking end customers clients details, percentage of learning, pending items and summery.",
+          "alter": "advantex",
+          "responsibilities": "Working as Team Leader, Finding designing solution, working with developer, front end coding and flow creations for rest sections",
+          "client": "Aptara",
+          "software": "Photoshop, HTML5, CSS3, jQuery",
+          "moredetails": [
+            {
+              "image": "advantexe/advantex_admindashboard2.jpg",
+              "title": "Admin dashboard",
+              "alt": "Admin dashboard",
+              "description": "Admin dashboard and reports."
+            },
+            {
+              "image": "advantexe/advantex_userdashboard2.jpg",
+              "title": "User dashboard",
+              "alt": "User dashboard",
+              "description": "User dashboard and Other relevant criteria."
+            }
+          ]
+        }
+      ]
+    }

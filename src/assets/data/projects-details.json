@@ -1,0 +1,263 @@
+[
+  {
+    "iconName": "add_task",
+    "title": "Logo Design",
+    "setFlag": 4,
+    "sign": "logo",
+    "content": [
+      {
+        "imagePath": "./../../assets/images/logo/projects-logo001.png",
+        "title": "Piper",
+        "xl": 3,
+        "m": 6,
+        "nameOfAuthor": "A Author name",
+        "description": "Piper logo 2011"
+      },
+      {
+        "imagePath": "./../../assets/images/logo/projects-logo002.png",
+        "title": "Hallos",
+        "xl": 3,
+        "m": 6,
+        "nameOfAuthor": "A Author name",
+        "description": "Hallo logo"
+      },
+      {
+        "imagePath": "./../../assets/images/logo/projects-logo003.png",
+        "title": "Ronald",
+        "xl": 3,
+        "m": 6,
+        "nameOfAuthor": "A Author name",
+        "description": "Basket ball logo"
+      },
+      {
+        "imagePath": "./../../assets/images/logo/projects-logo004.png",
+        "title": "Mac-Basket",
+        "xl": 3,
+        "m": 6,
+        "nameOfAuthor": "A Author name",
+        "description": "Fruit basket logo"
+      },
+      {
+        "imagePath": "./../../assets/images/logo/projects-logo005.png",
+        "title": "Piper",
+        "xl": 3,
+        "m": 6,
+        "nameOfAuthor": "A Author name",
+        "description": "Travel tourism"
+      },
+      {
+        "imagePath": "./../../assets/images/logo/projects-logo006.png",
+        "title": "Hallos",
+        "xl": 3,
+        "m": 6,
+        "nameOfAuthor": "A Author name",
+        "description": "Garments"
+      },
+      {
+        "imagePath": "./../../assets/images/logo/projects-logo007.png",
+        "title": "Ronald",
+        "xl": 3,
+        "m": 6,
+        "nameOfAuthor": "A Author name",
+        "description": "Vegetable shop"
+      },
+      {
+        "imagePath": "./../../assets/images/logo/projects-logo008.png",
+        "title": "Mac-Basket",
+        "xl": 3,
+        "m": 6,
+        "nameOfAuthor": "A Author name",
+        "description": "IIT-JEE"
+      },
+      {
+        "imagePath": "./../../assets/images/logo/projects-logo009.png",
+        "title": "Piper",
+        "xl": 3,
+        "m": 6,
+        "nameOfAuthor": "A Author name",
+        "description": "Maskot"
+      },
+      {
+        "imagePath": "./../../assets/images/logo/projects-logo010.png",
+        "title": "RadioPalm logo",
+        "xl": 3,
+        "m": 6,
+        "nameOfAuthor": "A Author name",
+        "description": "Radio"
+      },
+      {
+        "imagePath": "./../../assets/images/logo/projects-logo011.png",
+        "title": "Ronald",
+        "xl": 3,
+        "m": 6,
+        "nameOfAuthor": "A Author name",
+        "description": "Sports Club"
+      },
+      {
+        "imagePath": "./../../assets/images/logo/projects-logo012.png",
+        "title": "Mac-Basket",
+        "xl": 3,
+        "m": 6,
+        "nameOfAuthor": "A Author name",
+        "description": "Woman Bags"
+      },
+      {
+        "imagePath": "./../../assets/images/logo/projects-logo013.png",
+        "title": "FSI",
+        "xl": 3,
+        "m": 6,
+        "nameOfAuthor": "A Author name",
+        "description": "American financial"
+      },
+      {
+        "imagePath": "./../../assets/images/logo/projects-logo014.png",
+        "title": "Hallos",
+        "xl": 3,
+        "m": 6,
+        "nameOfAuthor": "A Author name",
+        "description": "Wealth creation & consulting"
+      },
+      {
+        "imagePath": "./../../assets/images/logo/projects-logo015.png",
+        "title": "Ronald",
+        "xl": 3,
+        "m": 6,
+        "nameOfAuthor": "A Author name",
+        "description": "Exam tool"
+      },
+      {
+        "imagePath": "./../../assets/images/logo/projects-logo016.png",
+        "title": "Mac-Basket",
+        "xl": 3,
+        "m": 6,
+        "nameOfAuthor": "A Author name",
+        "description": "Stardom contest"
+      }
+    ]
+  },
+  {
+    "iconName": "airplay",
+    "title": "Website Design",
+    "setFlag": 12,
+    "sign": "website",
+    "content": [
+      {
+        "imagePath": "./../../assets/images/webdesign/4wheel.jpg",
+        "title": "Piper",
+        "xl": 12,
+        "m": 12,
+        "nameOfAuthor": "A Author name",
+        "description": "4 wheel NGO"
+      },
+      {
+        "imagePath": "./../../assets/images/webdesign/BalcoDashboard.jpg",
+        "title": "Piper",
+        "xl": 12,
+        "m": 12,
+        "nameOfAuthor": "A Author name",
+        "description": "Balco Govt Enterprise"
+      },
+      {
+        "imagePath": "./../../assets/images/webdesign/repsuit.jpg",
+        "title": "Piper",
+        "xl": 12,
+        "m": 12,
+        "nameOfAuthor": "A Author name",
+        "description": "Rep-Suit"
+      },
+      {
+        "imagePath": "./../../assets/images/webdesign/riccomondo2x.jpg",
+        "title": "Piper",
+        "xl": 12,
+        "m": 12,
+        "nameOfAuthor": "A Author name",
+        "description": "Jewellary site"
+      }
+    ]
+  },
+  {
+    "iconName": "apps_outage",
+    "title": "Application",
+    "setFlag": 12,
+    "sign": "apps",
+    "content": [
+      {
+        "imagePath": "./../../assets/images/app/easyspeak_logo.png",
+        "title": "Easy Speak",
+        "xl": 4,
+        "m": 12,
+        "nameOfAuthor": "Easy Speck Android app",
+        "description": "Android app for learning language"
+      },
+      {
+        "imagePath": "./../../assets/images/app/easyspeak_dashboard.png",
+        "title": "Easy Speak",
+        "xl": 4,
+        "m": 12,
+        "nameOfAuthor": "Easy Speck Android app",
+        "description": "Android app for learning language"
+      },
+      {
+        "imagePath": "./../../assets/images/app/easyspeak_animal.png",
+        "title": "Easy Speak",
+        "xl": 4,
+        "m": 12,
+        "nameOfAuthor": "Easy Speck Android app",
+        "description": "Android app for learning language"
+      },
+      {
+        "imagePath": "./../../assets/images/app/easyspeak_slidepage.png",
+        "title": "Easy Speak",
+        "xl": 4,
+        "m": 12,
+        "nameOfAuthor": "Easy Speck Android app",
+        "description": "Android app for learning language"
+      },
+      {
+        "imagePath": "./../../assets/images/app/details/net-inspect/Landing-eBook.png",
+        "title": "Net Inspect",
+        "xl": 8,
+        "m": 12,
+        "nameOfAuthor": "Net Inspect IOS app",
+        "description": "Net Inspect IOS app for landing page"
+      },
+      {
+        "imagePath": "./../../assets/images/app/details/net-inspect/Landing-NI.png",
+        "title": "Net Inspect",
+        "xl": 12,
+        "m": 12,
+        "nameOfAuthor": "Net Inspect IOS app",
+        "description": "Net Inspect IOS app for dashboard page"
+      }
+    ]
+  },
+  {
+    "iconName": "assignment",
+    "title": "Brochure",
+    "setFlag": 1,
+    "sign": "brochure",
+    "content": [
+      {
+        "imagePath": "./../../assets/images/app/projects_wdg2a.jpg",
+        "title": "Work from home Brochure",
+        "setFlag": 2,
+        "nameOfAuthor": "rg",
+        "description": "Work from home Started"
+      },
+      {
+        "imagePath": "./../../assets/images/app/typing-899806_1920.jpg",
+        "title": "space near next Brochure",
+        "setFlag": 2,
+        "nameOfAuthor": "rg",
+        "description": "space near next Brochure"
+      },
+      {
+        "imagePath": "./../../assets/images/app/notfound.jpg",
+        "title": "rg",
+        "setFlag": 2,
+        "nameOfAuthor": "rg",
+        "description": "rg consulting"
+      }
+    ]
+  }
+]

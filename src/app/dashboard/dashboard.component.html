@@ -1,0 +1,62 @@
+<div class="container-fluid">
+  <img src="./../../assets/images/banner_bg.png" alt="bg banner" class="banner-Image-bg" />
+  <div class="boardskill">
+    <h1 class="animate__animated animate__bounce"><span class="col-black">{{pageTitleHello}}</span>{{pageTitle}}</h1>
+    <div *ngIf="canvasboarddata" class="">
+      <div *ngFor="let sty of canvasboarddata" class="boardskill_child" [style.background-color]="sty.backgroundColor"
+        [style.color]="sty.color" [style.width]="sty.size" [style.height]="sty.size" [style.left]="sty.xCordinate"
+        [style.top]="sty.yCordinate"><span [style.color]="sty.textColor"
+          [style.font-size]="sty.size">{{sty.title}}</span>
+      </div>
+    </div>
+  </div>
+  <!-- <img class="image img-fluid" src="././../../assets/images/frontImg.png" alt="" /> -->
+
+</div>
+<div class="container">
+  <!-- Dashbaord -->
+  <div class="zambobox">
+    <div class="row">
+      <div class="col xl3 m6 s12" *ngFor="let card of cardsDetailsInDashboard">
+        <div class="card card-panel hoverable">
+          <div class="Card-title p-4"><small>{{card.title}}-{{card.nameOfAuthor}}</small></div>
+          <div class="card-image">
+            <img src="{{card.imagePath}}" class="animate__animated animate__bounce">
+            <span class="card-title">{{card.title}}</span>
+          </div>
+          <div class="card-content">
+            <p>{{card.description}}</p>
+          </div>
+          <div class="card-action">
+            <a [href]="card.link" class="text-primary">{{card.nameOfAuthor}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <em>
+      <blockquote [innerHTML]="blockqotetxt"></blockquote>
+    </em>
+  </div>
+</div>
+
+<hr>
+<section class="container valign-wrapper">
+  <app-sectiontwo></app-sectiontwo>
+</section>
+
+<hr>
+<section class="container-fluid">
+  <div class="container">
+    <p class="display-4"[innerHtml]="title"></p>
+    <button type="button" class="btn btn-info" [routerLink]="['/contact']">Check it now!</button>
+  </div>
+</section>
+<hr>
+<div class="container">
+  <app-sectionone></app-sectionone>
+</div>
+<hr>
+<section class="container valign-wrapper">
+  <app-tecnology-tab [techDetails]="techDetails"></app-tecnology-tab>
+</section>

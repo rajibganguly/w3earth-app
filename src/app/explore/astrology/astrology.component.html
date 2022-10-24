@@ -1,0 +1,51 @@
+<div>
+  <p><span class="badge badge-info">Astrology</span></p>
+
+  <div class="jumbotron custom-bg-color2">
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <h1 class="display-4">Find Daily Prediction based on Sun Sign!</h1>
+        <p class="lead">For Ex. If your date of birth is 1st Jan, then you are CAPRICORNIAN.</p>
+        <span>ARIES <strong>Mars </strong></span>
+        <span>TAURUS <strong>Venus </strong></span>
+        <span>GEMINI <strong>Mercury </strong></span>
+        <span>CANCER <strong>Moon </strong></span>
+        <span>LEO <strong>Sun </strong></span>
+        <span>VIRGO <strong>Mercury & Rahu </strong></span>
+        <span>LIBRA <strong>Venus </strong></span>
+        <span>SCORPIO <strong>Mars and Ketu </strong></span>
+        <span>SAGITTARIUS <strong>Jupiter </strong></span>
+        <span>CAPRICORN <strong>Saturn </strong></span>
+        <span>AQUARIUS <strong>Saturn and Rahu </strong></span>
+        <span>PISCES <strong>Jupiter </strong></span>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <img src="./../../../assets/images/logo.png" alt="w3earth" />
+        <div class="form-group">
+          <label for="selectRashi">Date of Birth in Between</label>
+          <select id="selectRashi" class="form-control" #selectRashi (change)="changeSelect()">
+            <option selected>DOB found in...</option>
+            <option value="{{z.value}}" *ngFor="let z of zodac">{{z.name}}</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="lead snowpaper" *ngIf="dataDetails">
+      <h3>Result:</h3>
+      <ol style="font-size:1.1rem">
+        <li>Current Date: <strong>{{dataDetails.current_date}}</strong></li>
+        <li>Compatibility: <strong>{{dataDetails.compatibility}}</strong></li>
+        <li>Lucky Number: <strong>{{dataDetails.lucky_number}}</strong></li>
+        <li>Lucky Time: <strong>{{dataDetails.lucky_time}}</strong></li>
+        <li>Color: <strong>{{dataDetails.color}}</strong></li>
+        <li>Date Range: <strong>{{dataDetails.date_range}}</strong></li>
+        <li>Mood: <strong>{{dataDetails.mood}}</strong></li>
+        <li>Description: <strong>{{dataDetails.description}}</strong></li>
+      </ol>
+    </div>
+
+    <hr class="my-4">
+  </div>
+</div>

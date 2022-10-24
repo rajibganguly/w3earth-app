@@ -1,0 +1,62 @@
+<div class="container">
+  <!-- Project -->
+  <h1>Projects</h1>
+
+  <mat-vertical-stepper [linear]="isLinear" #stepper>
+    <mat-step>
+      <ng-template matStepLabel>MNC PROJECTS:</ng-template>
+      <mat-tab-group>
+        <div *ngFor="let comp of companiesAll">
+          <mat-tab *ngFor="let c of comp; let i = index;" [attr.data-index]="i">
+            <ng-template mat-tab-label>
+              <img class="companyIcon-small" [src]="c.data.logo" alt="" style="width:90px" />
+            </ng-template>
+            <ng-template matTabContent>
+              <div class="company pt-4 pb-4">
+                <p class="sector-date">
+                  <mat-icon>event</mat-icon> {{c.data.type}} | <mat-icon>date_range</mat-icon>
+                  Date: {{c?.data?.startdate}} - {{c?.data?.enddate}}
+                </p>
+                <div class="company-figure" *ngFor="let pro of c?.data?.pagetemplate">
+                  <h5>Company: <strong>{{pro.client}}</strong> | Client: <strong>{{c?.data?.title}}</strong></h5>
+                  <p>{{pro.responsibilities}}</p>
+                  <figure>
+                    <img src="{{pro.image}}" alt="" />
+                    <figcaption>
+                      <strong>Business</strong>: {{pro.projectbusinessline}}
+                    </figcaption>
+                    <figcaption>
+                      <strong>Responsibilities</strong>: {{pro.responsibilities}}
+                    </figcaption>
+                    <figcaption>
+                      <strong>Software</strong>: {{pro.software}}
+                    </figcaption>
+                  </figure>
+                  <div class="more" *ngFor="let more of pro.moredetails">
+                    <h3>{{more.title}}</h3>
+                    <p>{{more.description}}</p>
+                    <img src="{{more.image}}" alt="{{more.alt}}" />
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </mat-tab>
+        </div>
+      </mat-tab-group>
+
+      <button class="waves-effect waves-light btn" matStepperPrevious>Back</button>
+      <button class="waves-effect waves-light btn ml-1" matStepperNext>Next</button>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>BRAND DESIGNS:</ng-template>
+      <h2>I love Brand design, so some of examples</h2>
+      <app-list-of-topic [topicsListed]="topicsListed" [cards]="cards"></app-list-of-topic>
+      <button class="waves-effect waves-light btn" matStepperPrevious>Back</button>
+      <button class="waves-effect waves-light btn ml-1" (click)="stepper.reset()">Back to first</button>
+    </mat-step>
+  </mat-vertical-stepper>
+
+</div>
+<div class="container">
+  <p class="mute pt-4 pb-4">Note: All artwork is strictly for presentation purpose and copyright for some customer.</p>
+</div>

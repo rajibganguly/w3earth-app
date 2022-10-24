@@ -1,0 +1,11 @@
+<div class="row">
+  <h1>Best clients I ever worked</h1>
+  <div class="col-xl-3 col-md-4 col-xs-6" *ngFor="let cl of clientsLists">
+    <!-- Promo Content 3 goes here -->
+    <div class="center promo promo-example">
+      <img [src]="cl.img" [alt]="cl.alt" class="img-fluid" />
+      <span class="promo-caption"><small><strong>{{cl.designation}}</strong></small></span>
+      <p class="light center">{{cl.details}}</p>
+    </div>
+  </div>
+</div>

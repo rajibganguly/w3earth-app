@@ -1,0 +1,38 @@
+[
+  {
+    "data": [
+      {
+        "label": "HTML5",
+        "value": "html5",
+        "image": "./",
+        "description": "<p><strong>HTML5 </strong> is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and final major HTML version that is a World Wide Web Consortium recommendation. I started on 2008 and before on xHtml4.01 where declaration must refer DTD <span class='red'>&lt;!DOCTYPE&gt;</span> </p> <p>Some newly added HTML tags are &lt;progress&gt;, &lt;datalist&gt;, &lt;time&gt;, &lt;summary&gt;, &lt;audio&gt;, &lt;video&gt;</p> <p>API (Application Programming Interfaces) Application Programming Interfaces Stand in HTML5. It is a set of routines, protocols, and tools for building software applications.</p> <ol> <li>Web Workers</li> <li>Drag and Drop</li> <li>Application Cache</li> <li>Web Storage</li> <li>SSE</li> </ol> <p>Addition of newly of HTML5 SVG and canvas are both technologies that can be creating rich graphics on web </p>"
+      },
+      {
+        "label": "CSS",
+        "value": "css",
+        "image": "./",
+        "description": "<p><strong>CSS </strong> Known as Cascading Style Sheets used for describing the presentation of a document written in a markup language such as HTML. </p> <p>I started to work on it since 2007. I used it as inline CSS, internal or embedded CSS, and external CSS. In architecting CSS most useful methodologies are BEM (Block, Element, Modifier), OOCSS (Object-Oriented CSS), SMACSS (Scalable and Modular Architecture for CSS), Atomic CSS and ITCSS - Inverted Triangle CSS</p> <p>CSS Specificity is an algorithm that calculates the weight that is applied to a given CSS declaration.</p> <p>Nowadays various of popular CSS frameworks also available to reduce development tasks like Bootstrap, Foundation, Tailwind CSS, Bulma, Skeleton etc. </p> <p><span class='red'>Preprocessors</span> It is a CSS extension that allows to use feature like variables, nesting, imports, mixins, inheritance, etc, all in a CSS-compatible syntax. Populer examples are SASS/SCSS, LESS</p> <p>Some newly launched CSS are @container (looks similar to @media), display: grid for flexbox layout.</p>"
+      },
+      {
+        "label": "JavaScript",
+        "value": "javaScript",
+        "image": "./",
+        "description": "<p> It abbreviated <strong>JS</strong>, a programming language that is one of the core technologies of the World Wide Web. It is widely popular. Some of the popular frameworks and libraries which I often use. </p> <ul> <li> <strong class='red'>Angular:</strong> It is a TypeScript-based free and open-source web application framework led by the Angular Team at Google. I started it on 2016 with version 4 and still currently working with. Angular helps build interactive and dynamic single page applications (SPAs) through its compelling features that include templating, two-way binding, modularization, RESTful API handling, dependency injection, and AJAX handling. Components, Modules, Templates, Services, Metadata and decorators are key components of Angular </li> <li> <strong class='red'>ReactJS:</strong> React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. I started with React in 2015. React allows developers to create large web applications that can change data, without reloading the page. The main purpose of React is to be fast, scalable, and simple. It works only on user interfaces in the application. JSX, Components, One-way Data Binding, Virtual DOM, Simplicity and Performance are the key points. </li> <li> <strong class='red'>jQuery:</strong> It is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. The purpose of jQuery is to make it much easier to use JavaScript on your website. It is highly recomended for basic knowledge and I started working with it on 2009. Still today it has over 60% market hold. </li> </ul>"
+      },
+      {
+        "label": "Github",
+        "value": "github",
+        "image": "./",
+        "description": "<p>GitHub, Inc., is an Internet hosting service for software development and version control using Git. It provides the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project. It used for source code management, it's an open-source DevOps tool, and GitHub is a Git repository hosting platform. It is used widely for control and collaboration purposes. The platform is a place for storing code which is intellectual property, so it is very important to make it a safe space. Here is my repo link to check..</p><ul><li><em>https://w3earth.link/</em></li></ul>"
+      },
+      {
+        "label": "Portfolios",
+        "value": "portfolios",
+        "image": "./",
+        "description": "<p>founder & Innovations</p><ul><li><em>https://github.com/rajibganguly?tab=repositories</em></li><li><em>https://w3earth.droppages.com/</em></li><li><em>https://w3earth.com/</em></li></ul><p>Old Man-s Wall</p><ul><li><em>https://www.coroflot.com/w3earth</em></li><ul><br><p>Behance, designer`s choice</p><ul><li><em>https://www.behance.net/w3earth</li></ul><br><p>LinkedIn, a professional destination</p><ul><li><em>https://www.linkedin.com/in/rajib-ganguly-0a3031a/</em></li></ul><br><p>Facebook, a social presence</p><ul><li><em>https://www.facebook.com/Designer.RajibGanguly</em></li></ul><p>Email: rajibganguly@gmail.com / w3earth@outlook.com / rajib.ganguly@hotmail.com</p>"
+      }
+    ]
+  }
+]
+
+

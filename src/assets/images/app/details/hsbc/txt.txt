@@ -1,0 +1,30 @@
+https://authentication.liveperson.net/login.html
+Title:Click 2 Chat
+Description:
+Set Requirement, details requirement gather for third party technical implementation, Demo and partial implementation of chat tools, understand inner application complexity and final bug fixing
+
+DATE
+Jan 2016 - May 2016 (5 months)
+
+ROLE
+UI
+TASKS
+Technical Analysis, Design understanding from liveperson team, Front-end Development, Unit testing, Bug fixing
+TOOLS
+MS Office, HTML5/CSS3, Javascript, GIT, QC tool and others
+
+PROCESS
+login to liveperson and understand how their application works.
+ Research and understanding design with liveperson team, updating their demo application.
+setup meeting with entity team to understand the pro cons.
+creating a separate branch for development.
+Development and testing and push to final branch.
+ 
+RESEARCH
+Start day in research with liveperson team to understand the flow of the application, dependencies and compatability issues.
+
+DESIGN REQUIREMENTS
+Add their dependency and start development and necessary code changes. Creating test cases.
+
+DESIGN
+Hence HFD already created, so we implemented the respective changes.

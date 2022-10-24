@@ -1,0 +1,12 @@
+<mat-tab-group *ngIf="topicsListed">
+  <mat-tab *ngFor="let tab of topicsListed">
+    <ng-template mat-tab-label>
+      <i class="material-icons" aria-hidden="false" aria-label="arrow">{{tab.iconName}}</i>
+      <span class="padl10">{{tab.title}}</span>
+    </ng-template>
+    <div class="pad">
+      <app-card-sample [cards]="tab.content"></app-card-sample>
+    </div>
+
+  </mat-tab>
+</mat-tab-group>

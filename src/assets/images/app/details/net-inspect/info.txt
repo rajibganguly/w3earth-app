@@ -1,0 +1,22 @@
+The global leader in supply chain and quality improvement software
+Application for 
+
+Used technology
+ui-bootstrap-0.1.0
+AngularJS 1.2.x.
+Bootstrap v3.2.0
+Modernizr 2.5.3
+jquery-1.11.1
+Mongoose - web server(https://cesanta.com/)
+WowBook, a flipbook jQuery plugin
+WebTrends SmartSource Data Collector Tag v10.4.14
+http://angular-ui.github.io/bootstrap/
+used different types of components into the application.
+
+Rainbow.js is a simple code syntax highlighter
+
+
+for forms elements used
+jquery.icheck.min
+jquery.idealforms.min
+jquery.payment

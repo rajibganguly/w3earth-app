@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+// Color
+@import "./../node_modules/animate.css/animate.min.css";
+@import "./assets/materialize.scss";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+/* VARIABLE COLOR */
+$colorWhite: white;
+$colorLightBlue: rgb(240, 240, 240);
+$textColor: #616161;
+@mixin radial-background($col1, $col2) {
+  background: $col1;
+  background: radial-gradient(circle, $col1 0%, $col2 100%);
+
+}
+
+
+
+/* HEADER CUSTOM SCSS */
+
+nav {
+  @extend .indigo, .white;
+  box-shadow: none;
+  .brand-logo {
+    color: $textColor;
+    z-index:1;
+    img {
+      width:170px;
+    }
+  }
+  i.material-icons {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  ul {
+    li {
+      a {
+        color: $textColor;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/* FOOTER CUSTOM SCSS */
+footer {
+  @extend .indigo, .white;
+  &.page-footer {
+    color: $textColor;
+    .footer-copyright {
+      color: $textColor;
+      a {
+        color: $textColor;
+      }
+    }
+  }
+}
+
+/* ZAMBOBOX CUSTOM SCSS */
+.zambobox {
+  @extend  .grey, .lighten-5;
+  @include radial-background($colorWhite, $colorLightBlue);
+  margin: 5% auto;
+  padding: 2%;
+  .image {
+    width:100%;
+    padding: 1%;
+    @extend .grey, .lighten-3;
+    &:hover {
+      @extend .grey, .lighten-4;
+    }
+  }
+  div.header-sort {
+    width:100%;
+    background: url('https://s3images.coroflot.com/user_files/individual_files/325187_sguVE2imeVWusG0T_dxXfJ9TX.jpg') right 30px no-repeat;
+    h1 {
+      font-size:3rem;
+      line-height: 4rem;
+      width: calc(100% - 350px);
+      /*background:#fff;*/
+      border-radius: 0 0 30% 0;
+      font-weight: 100;
+    }
+  }
+}
+
+/* CUSTOM SCSS */
+html,
+body {
+  height: 100%;
+  @include radial-background($colorWhite, $colorLightBlue);
+  //  background: url(./assets//images/nasa-3d-printed-habitat-mars-competition-design_dezeen_2364_hero-2.jpg);
+  h1 {
+    @extend .deep-orange-text, .text-darken-3
+  }
+  .card-panel {
+    padding: 0;
+    @extend .grey, .lighten-3;
+    &.hoverable {
+      @extend .grey, .lighten-4;
+    }
+  }
+  .sector-date {
+    color: lighten($textColor, 25);
+    mat-icon {
+      vertical-align: middle;
+    }
+  }
+  .company-figure {
+    h5 {
+      @extend .grey-text, .lighten-4;
+      strong {
+        @extend .deep-orange-text, .text-darken-3;
+      }
+    }
+    .more {
+      border: 1px dashed $textColor;
+      padding: 10px;
+      @extend .grey, .lighten-4;
+      h3 {
+        text-transform: uppercase;
+      }
+      img {
+        width:100%;
+      }
+    }
+    figure {
+      img {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+      figcaption {
+        border-top: 1px solid #ccc;
+        padding: 10px 0;
+        @extend .grey-text, .lighten-4;
+        strong {
+          @extend .deep-orange-text, .text-darken-3
+        }
+      }
+    }
+  }
+  .boardskill {
+    // background: rgba(0, 0, 0, 1);
+    // animation: morph 9s infinite ease;
+    // transition: animation 5000ms linear;
+  }
+
+  /* (A1) BACKGROUND COLOR SEQUENCE */
+@keyframes morph {
+  0% { background-image: radial-gradient(rgba(0, 0, 0, 1), rgba(38, 5, 5, 0.5), rgb(58, 58, 58)); }
+  50% { background-image: radial-gradient(rgba(0, 0, 0, 1), rgba(4, 64, 76, 0.5), rgb(58, 58, 58)); }
+  100% { background-image: radial-gradient(rgba(0, 0, 0, 1), rgba(149, 2, 2, 0.5), rgb(58, 58, 58)); }
+}
+
+}
+
+.banner-Image-bg {
+  position: absolute;
+    z-index: 0;
+    left: 0;
+    bottom: 39px;
+    width: 100%;
+}
+
+$padding: 1em;
+
+/* Padding */
+@mixin pad($padposition, $padding) {
+  @if $padposition == top {
+    padding-top: $padding;
+  } @else if $padposition == right {
+    padding-right: $padding;
+  } @else if $padposition == bottom {
+    padding-bottom: $padding;
+  } @else if $padposition == left {
+    padding-left: $padding;
+  } @else if $padposition == x {
+    padding-left: $padding;
+    padding-right: $padding;
+  } @else if $padposition == y {
+    padding-top: $padding;
+    padding-bottom: $padding;
+  }
+}
+
+/* margin */
+@mixin mar($padposition, $padding) {
+  @if $padposition == top {
+    margin-top: $padding;
+  } @else if $padposition == right {
+    margin-right: $padding;
+  } @else if $padposition == bottom {
+    margin-bottom: $padding;
+  } @else if $padposition == left {
+    margin-left: $padding;
+  } @else if $padposition == x {
+    margin-left: $padding;
+    margin-right: $padding;
+  } @else if $padposition == y {
+    margin-top: $padding;
+    margin-bottom: $padding;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  .pad {
+    @include pad(y, 3em);
+  }
+}

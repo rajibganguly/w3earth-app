@@ -1,0 +1,30 @@
+{
+      "id": 102,
+      "title": "Barclays",
+      "thumbnail": "projects_rg09.jpg",
+      "details": "ui coding, UI development and Support",
+      "startdate": "2018-12-15",
+      "enddate": "2016-6-7",
+      "duration": "2.5Y",
+      "pattern": "fullrowdesigntwo",
+      "pagetemplate": [
+        {
+          "projectname": "Barclays",
+          "projectbusinessline": "Barclays PLC is a global financial services company headquartered in London, United Kingdom. As of 2010, it is the 10th largest banking and financial services group in the world and is the 21st largest company overall according to Forbes magazine.",
+          "image": "barclays/barclays_image1.jpg",
+          "description": "",
+          "alter": "Barclays Open banking",
+          "responsibilities": "Working as Team Leader, Finding designing solution, working with developer, front end coding and flow creations for rest sections",
+          "client": "Capgemini",
+          "software": "HTML5/CSS/Angular JS/Angular 2+, BitBucket, Jenkins, Colour Contrast Analyser 2.5.0, NVDA screen reader, Scrum",
+          "moredetails": [
+            {
+              "image": "barclays/barclays_image2.jpg",
+              "title": "open banking page - master",
+              "alt": "open banking page - master",
+              "description": "For open banking, user can login through master, which is olb/authlogin, then need to goto olb/balances.."
+            }
+          ]
+        }
+      ]
+    }
