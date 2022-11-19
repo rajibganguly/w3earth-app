@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 import { DataService } from './../../data-service.service';
 
 @Component({
@@ -28,8 +29,8 @@ export class AdviceAPIComponent implements OnInit {
     })
   }
 
-  nextProfile() {
-    this.service.rapidAPIYahooFin(this.companyName, this.region).subscribe((data) => {
+  async nextProfile() {
+    await this.service.rapidAPIYahooFin(this.companyName, this.region).subscribe((data) => {
       if(
         this.companyName !== null &&
         this.companyName !== '' &&
@@ -53,7 +54,7 @@ export class AdviceAPIComponent implements OnInit {
 
 // Creating Noimage for those no image present in database
   private forImages(arr: any[]) {
-    const noImage = 'https://t4.ftcdn.net/jpg/04/00/24/31/360_F_400243185_BOxON3h9avMUX10RsDkt3pJ8iQx72kS3.jpg';
+    const noImage = environment.noImg;
     const photoObj = {
       resolutions: [
         {
@@ -62,8 +63,8 @@ export class AdviceAPIComponent implements OnInit {
       ]
     }
     arr.filter((filt) => {
-      if(filt.thumbnail) {
-        filt['thumbnail'] = photoObj;
+      if(!filt.thumbnail) {
+        filt.thumbnail = photoObj;
       }
     })
   }

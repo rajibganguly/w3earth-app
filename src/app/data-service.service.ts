@@ -9,7 +9,6 @@ import { environment } from './../environments/environment';
 })
 export class DataService {
   enviroment = environment;
-  // nasaApi = 'https://api.nasa.gov/planetary/apod?api_key=qXeYm0FuI4ybQ2jYXzcdbj6nXzdvaKMCmeHZLn88';
 
   constructor(private http: HttpClient) {
     console.log('212', environment.production);
@@ -75,7 +74,7 @@ export class DataService {
     const paramRegion = region;
     const url = `https://yh-finance.p.rapidapi.com/auto-complete?q=${companyName}&region=${region}`;
     const headers = {
-      'X-RapidAPI-Key': 'f1e0db20e1msh39bd11326d3021cp1fb9b7jsna317b321434a',
+      'X-RapidAPI-Key': environment.rakey,
       'X-RapidAPI-Host': 'yh-finance.p.rapidapi.com'
     }
 
