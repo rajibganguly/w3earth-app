@@ -1,4 +1,6 @@
+import { HttpClient, HttpHandler } from '@angular/common/http';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { DataService } from 'src/app/data-service.service';
 
 import { AdviceAPIComponent } from './advice-api.component';
 
@@ -8,7 +10,8 @@ describe('AdviceAPIComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AdviceAPIComponent ]
+      declarations: [ AdviceAPIComponent ],
+      providers: [DataService, HttpClient, HttpHandler]
     })
     .compileComponents();
   }));

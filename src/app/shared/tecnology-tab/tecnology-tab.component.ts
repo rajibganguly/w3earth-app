@@ -1,11 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ITechnologyDetails } from './../../dashboard/dashboard.model'
 
 @Component({
   selector: 'app-tecnology-tab',
   templateUrl: './tecnology-tab.component.html',
   styleUrls: ['./tecnology-tab.component.scss'],
 })
-export class TecnologyTabComponent implements OnInit {
+export class TecnologyTabComponent {
   title = 'Technical';
   @Input() techDetails: ITechnologyDetails[] | any;
 
@@ -14,12 +15,7 @@ export class TecnologyTabComponent implements OnInit {
   constructor() {
   }
 
-  ngOnInit(): void {}
+
 }
 
-export interface ITechnologyDetails {
-  value: string;
-  label?: string;
-  description?: string;
-  image?: string;
-}
+

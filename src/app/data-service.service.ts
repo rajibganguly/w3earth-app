@@ -70,9 +70,18 @@ export class DataService {
   }
 
   //FakeAPI Call
-  fakeApis() {
-    const url = 'https://randomuser.me/api/';
-    return this.http.get(url);
+  rapidAPIYahooFin(companyName: string, region: string) {
+    const paramCompanyName = companyName;
+    const paramRegion = region;
+    const url = `https://yh-finance.p.rapidapi.com/auto-complete?q=${companyName}&region=${region}`;
+    const headers = {
+      'X-RapidAPI-Key': 'f1e0db20e1msh39bd11326d3021cp1fb9b7jsna317b321434a',
+      'X-RapidAPI-Host': 'yh-finance.p.rapidapi.com'
+    }
+
+    return this.http.get(url, {headers: headers});
+    // const url = 'https://randomuser.me/api/';
+    // return this.http.get(url);
 
   }
 

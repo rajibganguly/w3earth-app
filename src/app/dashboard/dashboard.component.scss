@@ -39,14 +39,16 @@
     top: 20%;
     content: "Web design";
     z-index: 0;
-    width: calc(100% - 20%);
+    width: calc(100% - 55%);
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
     line-height: 2.8rem;
     transform: skew(2deg, 2deg);
+    background:rgba(0,0,0,0.6);
+    color: rgb(249, 231, 231) !important;
     .col-black {
-      color: rgb(109, 84, 84) !important;
+      color: rgb(245, 238, 238) !important;
     }
     &:hover {
       opacity: 0.7;
