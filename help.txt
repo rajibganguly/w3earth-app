@@ -1,0 +1,16 @@
+const headers = {
+      'X-RapidAPI-Key': 'f1e0db20e1msh39bd11326d3021cp1fb9b7jsna317b321434a',
+      'X-RapidAPI-Host': 'yh-finance.p.rapidapi.com'
+    }
+
+FINANCIAL_NEWS_SEC_FOR_W3
+
+# Make sure my email is set properly
+useremail=$(git config user.email)
+if [ "$useremail" != "onezerodesigns@gmail.com" ]
+then
+	cat <<\EOF
+Error: Please check your email
+EOF
+	exit 1
+fi

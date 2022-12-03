@@ -18,9 +18,13 @@ $textColor: #616161;
 
 
 /* HEADER CUSTOM SCSS */
+.mt-8 {
+  margin-top:4rem !important;
+}
 
 nav {
   @extend .indigo, .white;
+  background: none!important;
   box-shadow: none;
   .brand-logo {
     color: $textColor;
@@ -36,6 +40,7 @@ nav {
   ul {
     li {
       a {
+        font-size: 2rem;
         color: $textColor;
         display: inline-block;
       }
@@ -90,7 +95,8 @@ html,
 body {
   height: 100%;
   @include radial-background($colorWhite, $colorLightBlue);
-  //  background: url(./assets//images/nasa-3d-printed-habitat-mars-competition-design_dezeen_2364_hero-2.jpg);
+  background: url(./assets/images/lightbg.jpg) center top;
+  background-attachment: fixed;
   h1 {
     @extend .deep-orange-text, .text-darken-3
   }
@@ -209,5 +215,11 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   .pad {
     @include pad(y, 3em);
+  }
+  .mat-stepper-horizontal, .mat-stepper-vertical {
+    background: rgba(255,255,255,0.1);
+  }
+  .mat-step-text-label {
+    font-size:1.5rem;
   }
 }

@@ -13,7 +13,7 @@ export class ContactComponent  {
 
   downloadCV() {
     let text = prompt("Please enter code to download CV:", "");
-    if (text == "W3earth@2023") {
+    if (text == "W3earth") {
       window.open('./../../../assets/cv/resume.pdf');
     } else {
       window.alert("Please raise request to w3earth@outlook.com for download resume")

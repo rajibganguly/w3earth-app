@@ -6,13 +6,13 @@ export const HEADER = [
     icon: 'assessment',
   },
   {
-    label: 'Explore',
+    label: 'EXPLORE',
     link: './explore',
     text: 'Lets explore more',
     icon: 'explore',
   },
   {
-    label: 'Contact',
+    label: 'CONTACT',
     link: './contact',
     text: 'Connect now!',
     icon: 'contactless',

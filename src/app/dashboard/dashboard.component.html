@@ -1,7 +1,7 @@
 <div class="container-fluid">
-  <img src="./../../assets/images/hes-the-one-that-brings-humour-to-the-team-picture.jpg" alt="bg banner" class="banner-Image-bg" />
+  <img src="./../../assets/images/banner2.png" alt="bg banner" class="banner-Image-bg" />
   <div class="boardskill">
-    <h1 class="animate__animated animate__bounce"><span class="col-black">{{pageTitleHello}}</span>{{pageTitle}}</h1>
+    <!-- <h1 class="animate__animated animate__bounce"><span class="col-black">{{pageTitleHello}}</span>{{pageTitle}}</h1> -->
     <div *ngIf="canvasboarddata" class="">
       <div *ngFor="let sty of canvasboarddata" class="boardskill_child" [style.background-color]="sty.backgroundColor"
         [style.color]="sty.color" [style.width]="sty.size" [style.height]="sty.size" [style.left]="sty.xCordinate"
@@ -13,13 +13,13 @@
   <!-- <img class="image img-fluid" src="././../../assets/images/frontImg.png" alt="" /> -->
 
 </div>
-<div class="container">
+<div class="container-fluid">
   <!-- Dashbaord -->
   <div class="zambobox">
     <div class="row">
       <div class="col xl3 m6 s12" *ngFor="let card of cardsDetailsInDashboard">
         <div class="card card-panel hoverable">
-          <div class="Card-title p-4"><small>{{card.title}}-{{card.nameOfAuthor}}</small></div>
+          <div class="Card-title p-4">{{card.title}}-{{card.nameOfAuthor}}</div>
           <div class="card-image">
             <img src="{{card.imagePath}}" class="animate__animated animate__bounce">
             <span class="card-title">{{card.title}}</span>
