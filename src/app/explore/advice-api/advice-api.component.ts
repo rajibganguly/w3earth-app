@@ -24,8 +24,10 @@ export class AdviceAPIComponent implements OnInit {
 
   ngOnInit() {
     this.service.rapidAPIYahooFin(this.companyName, this.region).subscribe((data) => {
-      this.data = data;
-      this.userDetails = this.data.news;
+      if(data) {
+        this.data = data;
+        this.userDetails = this.data.news;
+      }
     })
   }
 

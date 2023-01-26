@@ -7,6 +7,7 @@ import { AstrologyComponent } from './astrology/astrology.component';
 import { NasaSateComponent } from './nasa-sate/nasa-sate.component';
 import { AdviceAPIComponent } from './advice-api/advice-api.component';
 import { FormsModule } from '@angular/forms';
+import { OpenaiComponent } from './openai/openai.component';
 
 
 
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     ExploreComponent,
     AstrologyComponent,
     NasaSateComponent,
-    AdviceAPIComponent
+    AdviceAPIComponent,
+    OpenaiComponent
   ],
   imports: [
     ExploreRoutingModule,

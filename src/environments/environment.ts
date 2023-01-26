@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  openAiKeys: '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',
   keys: 'qXeYm0FuI4ybQ2jYXzcdbj6nXzdvaKMCmeHZLn88',
   rakey: 'f1e0db20e1msh39bd11326d3021cp1fb9b7jsna317b321434a',
   dashboardTechnical: './assets/data/dashboard-technical.json',

@@ -4,19 +4,30 @@ import { Observable, forkJoin } from 'rxjs';
 import { ajax } from 'rxjs/ajax';
 import { environment } from './../environments/environment';
 
+import { Configuration, OpenAIApi } from "openai";
+const configuration = new Configuration({
+    organization: "",
+    apiKey: environment.openAiKeys,
+});
+
+
 @Injectable({
   providedIn: 'root',
 })
 export class DataService {
   enviroment = environment;
+  openai = new OpenAIApi(configuration);
+  w3eAIResponse: any;
 
   constructor(private http: HttpClient) {
-    console.log('212', environment.production);
+    console.log('Which env runs?', environment.production);
     if (isDevMode()) {
       console.log('1', 'Dev');
     } else {
       console.log('2', 'prod');
     }
+
+
   }
 
   // Technical details mentioned in Dashboarrd
@@ -83,6 +94,11 @@ export class DataService {
     // return this.http.get(url);
 
   }
+
+
+
+
+
 
 }
 
