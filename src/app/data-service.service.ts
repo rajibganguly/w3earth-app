@@ -4,11 +4,6 @@ import { Observable, forkJoin } from 'rxjs';
 import { ajax } from 'rxjs/ajax';
 import { environment } from './../environments/environment';
 
-import { Configuration, OpenAIApi } from "openai";
-const configuration = new Configuration({
-    organization: "",
-    apiKey: environment.openAiKeys,
-});
 
 
 @Injectable({
@@ -16,7 +11,6 @@ const configuration = new Configuration({
 })
 export class DataService {
   enviroment = environment;
-  openai = new OpenAIApi(configuration);
   w3eAIResponse: any;
 
   constructor(private http: HttpClient) {
