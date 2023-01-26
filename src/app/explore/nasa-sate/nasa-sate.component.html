@@ -1,116 +1,131 @@
 <p><span class="badge badge-info">Astroid</span></p>
 
-           <div class="jumbotron custom-bg-color2 nasa-explore">
+<div class="jumbotron custom-bg-color2 nasa-explore">
+  <div class="row">
+    <div class="col-md-12 col-xs-12">
+      <h1 class="display-4">Near Earth Asteroids!</h1>
+      <p class="lead pb-4">
+        <small>
+          Discover the universe with the Near Earth Asteroids app. This powerful tool provides you with real-time
+          information on asteroids that come close to Earth. With our app, you can track the orbit and approach of
+          near-Earth asteroids, view detailed information and images of each asteroid, and receive alerts for potential
+          impact events. The app also includes a map view to see the location of asteroids in relation to Earth and a news
+          feed for the latest updates on asteroid research and observations. Whether you're an asteroid enthusiast or just
+          curious about space, the Near Earth Asteroids app is a must-have for anyone interested in the study of asteroids
+          and their potential impact on Earth.
+        </small>
+      </p>
+    </div>
+    <div class="col-md-12 col-xs-12 p-4 border border-primary">
+      <p class="pb-0">Source: </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/200px-NASA_logo.svg.png"
+        alt="nasa" style="width:50px" />
+      <div class="d-flex justify-content-start">
+        <div class="form-group m-2">
+          <label>Choose Date</label>
+          <select class="form-control" #datedd>
+            <option selected>Select</option>
+            <option value="01">First Week</option>
+            <option value="08">Second Week</option>
+            <option value="15">Third Week</option>
+            <option value="22">Forth Week</option>
+          </select>
+        </div>
+        <div class="form-group m-2">
+          <label>& Months</label>
+          <select class="form-control" #months>
+            <option selected>Select</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+        </div>
+        <div class="form-group m-2">
+          <label>& Year</label>
+          <select class="form-control" #year>
+            <option selected>Select</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+          </select>
+        </div>
+      </div>
+      <div class="d-flex justify-content-start">
+        <div class="form-group">
+          <button class="btn btn-dark mt-2" (click)="showDetails()" [disabled]="showDetailsButton">Show details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div *ngFor="let x of allResponse" class="mt-2">
+      <h3 class="headingDate"><i class="fa fa-calendar-check-o"></i> Date -{{x}}</h3>
+      <div *ngIf="detailsData[x]">
+        <div class="card" *ngFor="let data of detailsData[x]">
+          <div class="card-header">
             <div class="row">
-                <div class="col-md-12 col-xs-12">
-                    <h1 class="display-4">Near Earth Asteroids!</h1>
-                    <p class="lead">Last many years, many astroids are passing by earth. But currently our science is very much mature to track all the informations. I got help from NASA to show this. </p>
+              <div class="col-md-6 col-xs-12">
+                <h3 *ngIf="data.is_potentially_hazardous_asteroid" class="text-danger"><i class="fa fa-bell-o"></i>
+                  Name: {{data.name}} </h3>
+                <h3 *ngIf="!data.is_potentially_hazardous_asteroid" class="text-dark"><i class="fa fa-snowflake-o"></i>
+                  Name: {{data.name}}</h3>
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <div *ngFor="let td of data.close_approach_data">
+                  <small *ngIf="data.is_potentially_hazardous_asteroid" class="text-danger">Estimated date:
+                    {{td.close_approach_date_full}}</small>
+                  <small *ngIf="!data.is_potentially_hazardous_asteroid">Estimated Date & Time:
+                    {{td.close_approach_date_full}}</small>
                 </div>
-                <div class="col-md-12 col-xs-12 p-4 border border-primary">
-                    <p class="pb-0">Source: </p>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/200px-NASA_logo.svg.png" alt="nasa" style="width:50px" />
-                    <div class="d-flex justify-content-start">
-                        <div class="form-group m-2">
-                            <label>Choose Date</label>
-                            <select class="form-control" #datedd>
-                                <option selected>Select</option>
-                                <option value="01">First Week</option>
-                                <option value="08">Second Week</option>
-                                <option value="15">Third Week</option>
-                                <option value="22">Forth Week</option>
-                            </select>
-                        </div>
-                        <div class="form-group m-2">
-                            <label>& Months</label>
-                            <select class="form-control" #months>
-                                <option selected>Select</option>
-                                <option value="01">January</option>
-                                <option value="02">February</option>
-                                <option value="03">March</option>
-                                <option value="04">April</option>
-                                <option value="05">May</option>
-                                <option value="06">June</option>
-                                <option value="07">July</option>
-                                <option value="08">August</option>
-                                <option value="09">September</option>
-                                <option value="10">October</option>
-                                <option value="11">November</option>
-                                <option value="12">December</option>
-                            </select>
-                        </div>
-                        <div class="form-group m-2">
-                            <label>& Year</label>
-                            <select class="form-control" #year>
-                                <option selected>Select</option>
-                                <option value="2022">2022</option>
-                                <option value="2023">2023</option>
-                                <option value="2024">2024</option>
-                                <option value="2025">2025</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-start">
-                        <div class="form-group">
-                            <button class="btn btn-dark mt-2" (click)="showDetails()" [disabled]="showDetailsButton">Show details</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="">
-            <div *ngFor="let x of allResponse" class="mt-2">
-                <h3 class="headingDate"><i class="fa fa-calendar-check-o"></i> Date -{{x}}</h3>
-                <div *ngIf="detailsData[x]">
-                    <div class="card" *ngFor="let data of detailsData[x]">
-                        <div class="card-header">
-                            <div class="row">
-                                <div class="col-md-6 col-xs-12">
-                                    <h3 *ngIf="data.is_potentially_hazardous_asteroid" class="text-danger"><i class="fa fa-bell-o"></i> Name: {{data.name}} </h3>
-                                    <h3 *ngIf="!data.is_potentially_hazardous_asteroid" class="text-dark"><i class="fa fa-snowflake-o"></i> Name: {{data.name}}</h3>
-                                </div>
-                                <div class="col-md-6 col-xs-12">
-                                    <div *ngFor="let td of data.close_approach_data">
-                                        <small *ngIf="data.is_potentially_hazardous_asteroid" class="text-danger">Estimated date: {{td.close_approach_date_full}}</small>
-                                        <small *ngIf="!data.is_potentially_hazardous_asteroid">Estimated Date & Time: {{td.close_approach_date_full}}</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-5 col-xs-12">
-                                    <div *ngIf="data.is_potentially_hazardous_asteroid" class="text-danger">
-                                        <div>Min Diameter: {{data.estimated_diameter.kilometers.estimated_diameter_min}} km</div>
-                                        <div>Max Diameter: {{data.estimated_diameter.kilometers.estimated_diameter_max}} km</div>
-                                        <div *ngFor="let td of data.close_approach_data">
-                                            <div>Velocity: {{td.relative_velocity.kilometers_per_second}} km/Sec</div>
-                                            <div>Distance: {{td.miss_distance.kilometers}} km</div>
-                                        </div>
-                                    </div>
-                                    <div *ngIf="!data.is_potentially_hazardous_asteroid" class="text-dark">
-                                        <div>Min Diameter: {{data.estimated_diameter.kilometers.estimated_diameter_min}} km</div>
-                                        <div>Max Diameter: {{data.estimated_diameter.kilometers.estimated_diameter_max}} km</div>
-                                        <div *ngFor="let td of data.close_approach_data">
-                                            <div>Velocity: {{td.relative_velocity.kilometers_per_second}} km/Sec</div>
-                                            <div>Distance: {{td.miss_distance.kilometers}} km</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-5 col-xs-12 moon-on-bg">
-                                    <div *ngFor="let td of data.close_approach_data">
-                                        <div>Today Moon will be on {{td.miss_distance.lunar}} KM distance.</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2 col-xs-12">
-                                    <p><a class="btn btn-light btn-sm ml-4" [href]="data.nasa_jpl_url" target="_blank">Read details</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
+              </div>
             </div>
           </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <div *ngIf="data.is_potentially_hazardous_asteroid" class="text-danger">
+                  <div>Min Diameter: {{data.estimated_diameter.kilometers.estimated_diameter_min}} km</div>
+                  <div>Max Diameter: {{data.estimated_diameter.kilometers.estimated_diameter_max}} km</div>
+                  <div *ngFor="let td of data.close_approach_data">
+                    <div>Velocity: {{td.relative_velocity.kilometers_per_second}} km/Sec</div>
+                    <div>Distance: {{td.miss_distance.kilometers}} km</div>
+                  </div>
+                </div>
+                <div *ngIf="!data.is_potentially_hazardous_asteroid" class="text-dark">
+                  <div>Min Diameter: {{data.estimated_diameter.kilometers.estimated_diameter_min}} km</div>
+                  <div>Max Diameter: {{data.estimated_diameter.kilometers.estimated_diameter_max}} km</div>
+                  <div *ngFor="let td of data.close_approach_data">
+                    <div>Velocity: {{td.relative_velocity.kilometers_per_second}} km/Sec</div>
+                    <div>Distance: {{td.miss_distance.kilometers}} km</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-xs-12 moon-on-bg">
+                <div *ngFor="let td of data.close_approach_data">
+                  <div>Today Moon will be on {{td.miss_distance.lunar}} KM distance.</div>
+                </div>
+              </div>
+              <div class="col-md-2 col-xs-12">
+                <p><a class="btn btn-light btn-sm ml-4" [href]="data.nasa_jpl_url" target="_blank">Read details</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+</div>
