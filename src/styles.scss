@@ -106,6 +106,7 @@ body {
     &.hoverable {
       @extend .grey, .lighten-4;
     }
+
   }
   .sector-date {
     color: lighten($textColor, 25);
