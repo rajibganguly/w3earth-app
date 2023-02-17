@@ -114,6 +114,16 @@ body {
       vertical-align: middle;
     }
   }
+  p.intTxt {
+    border: 1px solid blueviolet;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px inset rgba(210, 229, 232, 0.5);
+    background: rgba(255,255,255, 0.3);
+  }
+  h2.intTxt {
+    color: blueviolet;
+  }
   .company-figure {
     h5 {
       @extend .grey-text, .lighten-4;
