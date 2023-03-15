@@ -49,7 +49,8 @@ export class DataService {
     const companyData = forkJoin(
       ajax.getJSON(this.enviroment.companies.barclays),
       ajax.getJSON(this.enviroment.companies.hsbc),
-      ajax.getJSON(this.enviroment.companies.firmenich)
+      ajax.getJSON(this.enviroment.companies.firmenich),
+      ajax.getJSON(this.enviroment.companies.wbs)
     );
     return companyData;
   }

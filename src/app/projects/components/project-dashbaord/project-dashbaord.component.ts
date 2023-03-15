@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { DataService } from 'src/app/data-service.service';
 import { ITopicsListed, ICards } from '../../interface/project.interface';
 
@@ -7,7 +7,7 @@ import { ITopicsListed, ICards } from '../../interface/project.interface';
   templateUrl: './project-dashbaord.component.html',
   styleUrls: ['./project-dashbaord.component.scss']
 })
-export class ProjectDashbaordComponent implements OnInit {
+export class ProjectDashbaordComponent implements OnInit, OnDestroy {
   isLinear = false;
   topicsListed: ITopicsListed[] | any;
   cards: any = [];
@@ -34,6 +34,10 @@ export class ProjectDashbaordComponent implements OnInit {
       console.log('companiesAll ==>', this.companiesAll[0]);
       return this.companiesAll;
     })
+  }
+
+  ngOnDestroy(): void {
+    console.log('on destry')
   }
 
 }

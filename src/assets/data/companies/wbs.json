@@ -1,0 +1,60 @@
+[
+  {
+    "data": {
+      "id": 104,
+      "title": "Woodgrove Banking Safety (WBS) WBS-IGD Team Organization : C+AI",
+      "thumbnail": "projects_wbs.jpg",
+      "details": "UI, live streaming development and Testing automation",
+      "startdate": "2022-05-01",
+      "enddate": "2023-03-10",
+      "duration": "0.11Y",
+      "pattern": "fullrowdesigntwo",
+      "logo": "./assets/images/wbs/projects_wbs.jpg",
+      "type": "Security Monitor to detect activities and Alerts",
+      "pagetemplate": [
+        {
+          "projectname": "Aware",
+          "projectbusinessline": "Microsoft Corporation is an American multinational technology corporation headquartered in Redmond, Washington. Microsoft's best-known software product to serve his client Wallmart",
+          "image": "./assets/images/wbs/wbs_screen1.png",
+          "description": "Aware Reference Architecture is a design methodology and approach to building highly reliable cloud-native applications on Microsoft Azure for business-critical and mission-critical workloads.",
+          "alter": "wbs aware",
+          "responsibilities": "Set Requirement, details requirement gather for third party technical implementation, Demo and partial implementation of chat tools, understand inner application complexity and final bug fixing",
+          "client": "Microsoft",
+          "software": "Technical Analysis, Design understanding from liveperson team, Front-end Development, Unit testing, Bug fixing, TOOLS: MS Office, HTML5/CSS3, Javascript, GIT, QC tool and others",
+          "moredetails": [
+            {
+              "image": "./assets/images/wbs/wbs_screen2.png",
+              "title": "Alert Ingestion",
+              "alt": "wbs-cicd-master",
+              "description": "Image and video streming screen to monitor different activities and related alerts. Media files to show in details and click button to raise alert"
+            },
+            {
+              "image": "./assets/images/wbs/wbs_screen3.png",
+              "title": "Blank screen when no activities happened",
+              "alt": "blank screen",
+              "description": "When all activity resolved or no any pending activity to address for alert"
+            },
+            {
+              "image": "./assets/images/wbs/wbs_screen4.png",
+              "title": "Architechtural diagram for application ADO",
+              "alt": "Application diagram",
+              "description": "Application diagram for Azure, repository and plan highlevel"
+            },
+            {
+              "image": "./assets/images/wbs/wbs_screen5.png",
+              "title": "Calculationg risk and creating web automated test scenarios",
+              "alt": "wiki page",
+              "description": "Wiki page created to plan following test cases and plans hours"
+            },
+            {
+              "image": "./assets/images/wbs/wbs_screen6.png",
+              "title": "Authentication and architecture",
+              "alt": "wiki page A and A",
+              "description": "Wiki page created to documented all types of authentication cared for this application to access and detail front end architecture to perform"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

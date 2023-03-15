@@ -1,0 +1,33 @@
+https://aware.um
+Title:Woodgrove Banking Safety (WBS) WBS-IGD Team Organization : C+AI
+Description:
+Aware Reference Architecture is a design methodology and approach to building highly reliable cloud-native applications on Microsoft Azure for business-critical and mission-critical workloads. Aware Reference Architecture extends the Well-Architected Framework by providing prescriptive and opinionated guidance for business-critical scenarios where certain application characteristics are implicit, such as maximum reliability.
+
+Set Requirement, details requirement gather for third party technical implementation, Demo and partial implementation of chat tools, understand inner application complexity and final bug fixing
+
+DATE
+May 2022 - March 2023 (11 months)
+
+ROLE
+UI
+TASKS
+Technical Resolution and Testing, Front-end Development for live streaming, Unit testing, Automation testing with selenium, Perf testing
+TOOLS
+Azure, HTML5/CSS3, Javascript, GIT, Angular 13, SignalR
+
+PROCESS
+login to application and monitor security.
+Development process on Microsoft-INT, Microsoft-Dev, Client Aware-Int & Aware-Dev Environment. Different sandbox for development purpose.
+Pipeline integration for test cases.
+Participate in SOS.
+creating a separate branch for development.
+Development and testing and push to final branch.
+ 
+RESEARCH
+Start day in research with liveperson team to understand the flow of the application, dependencies and compatability issues.
+
+DESIGN REQUIREMENTS
+Add their dependency and start development and necessary code changes. Creating test cases.
+
+DESIGN
+Hence HFD already created, so we implemented the respective changes.

@@ -14,7 +14,8 @@ export const environment = {
   companies: {
     barclays: './assets/data/companies/barclays.json',
     hsbc: './assets/data/companies/hsbc.json',
-    firmenich: './assets/data/companies/firmenich.json'
+    firmenich: './assets/data/companies/firmenich.json',
+    wbs: './assets/data/companies/wbs.json'
   }
 };
 
