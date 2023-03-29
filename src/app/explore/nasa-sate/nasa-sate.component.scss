@@ -20,8 +20,46 @@
     }
   }
 
+
 .moon-on-bg {
-    background: url('https://d3nn873nee648n.cloudfront.net/900x600/3005/19-SS103769.jpg') 60% no-repeat;
+    background-color: #000; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #444 , #333, #010, #000);
     color:#ccc;
+    position: relative;
+    padding: 20px;
+    height: 150px;
+    .object-x {
+      width: 20px;
+      height: 20px;
+      background: url('./../../../assets/images/astrid.jpg') 0 0 repeat;
+      box-shadow: 0 0 16px #000;
+      z-index: 3;
+      display: inline-block;
+      border-radius: 50%;
+      position: absolute;
+    }
+    .object-moon {
+      width: 20px;
+      height: 20px;
+      background: url('./../../../assets/images/moon1.jpg') -14px -2px no-repeat;
+      box-shadow: 0 0 16px #000;
+      z-index: 4;
+      display: inline-block;
+      border-radius: 50%;
+      left: 170px;
+      position: absolute;
+    }
+
+    .object-world {
+      width: 100px;
+      height: 100px;
+      background: url('./../../../assets/images/world.png') no-repeat;
+      z-index: 2;
+      display: inline-block;
+      top: -2px;
+      position: absolute;
+      left: 0px;
+      margin-left: 108px;
+    }
 }
 

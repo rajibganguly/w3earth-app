@@ -83,9 +83,9 @@
               <div class="col-md-6 col-xs-12">
                 <div *ngFor="let td of data.close_approach_data">
                   <small *ngIf="data.is_potentially_hazardous_asteroid" class="text-danger">Estimated date:
-                    {{td.close_approach_date_full}}</small>
+                    {{td.close_approach_date_full}} U.S. Pacific Time</small>
                   <small *ngIf="!data.is_potentially_hazardous_asteroid">Estimated Date & Time:
-                    {{td.close_approach_date_full}}</small>
+                    {{td.close_approach_date_full}} U.S. Pacific Time</small>
                 </div>
               </div>
             </div>
@@ -102,17 +102,26 @@
                   </div>
                 </div>
                 <div *ngIf="!data.is_potentially_hazardous_asteroid" class="text-dark">
-                  <div>Min Diameter: {{data.estimated_diameter.kilometers.estimated_diameter_min}} km</div>
-                  <div>Max Diameter: {{data.estimated_diameter.kilometers.estimated_diameter_max}} km</div>
+                  <div>Min Diameter: {{data.estimated_diameter.kilometers.estimated_diameter_min * 1000}} KM</div>
+                  <div>Max Diameter: {{data.estimated_diameter.kilometers.estimated_diameter_max}} KM</div>
                   <div *ngFor="let td of data.close_approach_data">
                     <div>Velocity: {{td.relative_velocity.kilometers_per_second}} km/Sec</div>
-                    <div>Distance: {{td.miss_distance.kilometers}} km</div>
+                    <div>Distance: {{ td.miss_distance.kilometers }}  KM</div>
                   </div>
                 </div>
               </div>
               <div class="col-md-5 col-xs-12 moon-on-bg">
                 <div *ngFor="let td of data.close_approach_data">
-                  <div>Today Moon will be on {{td.miss_distance.lunar}} KM distance.</div>
+                  <!-- <div>Today Moon will be on {{td.miss_distance.lunar}} KM distance.</div> -->
+                  <span class="object-world"></span>
+                  <span class="object-moon"
+                  [style.left]="td.miss_distance.lunar | nasaNumber">
+                </span>
+                  <span class="object-x"
+                  [style.width]="data.estimated_diameter.kilometers.estimated_diameter_min * 1000 | nasaNumber"
+                  [style.height]="data.estimated_diameter.kilometers.estimated_diameter_min * 1000 | nasaNumber"
+                  [style.left]="td.miss_distance.kilometers | nasaNumber">
+                  </span>
                 </div>
               </div>
               <div class="col-md-2 col-xs-12">

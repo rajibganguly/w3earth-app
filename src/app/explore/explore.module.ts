@@ -8,6 +8,7 @@ import { NasaSateComponent } from './nasa-sate/nasa-sate.component';
 import { AdviceAPIComponent } from './advice-api/advice-api.component';
 import { FormsModule } from '@angular/forms';
 import { OpenaiComponent } from './openai/openai.component';
+import { NasaNumberPipe } from '../nasa-number.pipe';
 
 
 
@@ -17,7 +18,8 @@ import { OpenaiComponent } from './openai/openai.component';
     AstrologyComponent,
     NasaSateComponent,
     AdviceAPIComponent,
-    OpenaiComponent
+    OpenaiComponent,
+    NasaNumberPipe
   ],
   imports: [
     ExploreRoutingModule,

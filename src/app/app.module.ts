@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DataService } from './data-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DirectiveNasaNumbersDirective } from './directive-nasa-numbers.directive';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     SectiononeComponent,
     SectiontwoComponent,
+    DirectiveNasaNumbersDirective,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
