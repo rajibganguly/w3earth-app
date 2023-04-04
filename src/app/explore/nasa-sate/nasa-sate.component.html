@@ -115,13 +115,16 @@
                   <!-- <div>Today Moon will be on {{td.miss_distance.lunar}} KM distance.</div> -->
                   <span class="object-world"></span>
                   <span class="object-moon"
+                  title="Moon"
                   [style.left]="td.miss_distance.lunar | nasaNumber">
                 </span>
                   <span class="object-x"
-                  [style.width]="data.estimated_diameter.kilometers.estimated_diameter_min * 1000 | nasaNumber"
-                  [style.height]="data.estimated_diameter.kilometers.estimated_diameter_min * 1000 | nasaNumber"
+                  title="Astroid"
+                  [style.width]="data.estimated_diameter.feet.estimated_diameter_min * 1000 | nasaNumber"
+                  [style.height]="data.estimated_diameter.feet.estimated_diameter_min * 1000 | nasaNumber"
                   [style.left]="td.miss_distance.kilometers | nasaNumber">
                   </span>
+                  <small class="est-txt">*Estimated image view</small>
                 </div>
               </div>
               <div class="col-md-2 col-xs-12">
