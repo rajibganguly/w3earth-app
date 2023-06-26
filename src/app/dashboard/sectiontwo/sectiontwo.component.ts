@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DASHBOARD_BEST_CLIENTS_LOG } from 'src/app/constant';
 
 @Component({
   selector: 'app-sectiontwo',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class SectiontwoComponent {
+  title = DASHBOARD_BEST_CLIENTS_LOG;
   clientsLists: IClientsLogo[];
   constructor() {
     this.clientsLists = [

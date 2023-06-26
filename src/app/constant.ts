@@ -19,14 +19,15 @@ export const HEADER = [
   },
 ];
 
-export const CONTACTTITLE = "How it <strong>works</strong>? How can Process for <em>work</em> and <strong>hire</strong>? Freelance, contract or full time?";
+export const CONTACTTITLE = "Discusstion or suggestions related to <strong>work</strong>!";
 
 export const DASHBOARD_TITLE =
   'Front End (like Html. CSS, SASS, Bootstrap, Angular Js, ReactJs or Angular) with Cloud Back-end Service (like Kinvey/ Firebase/ AWS Amplify) and some essencial version control, reporting, SVG/Canvas, requirements management, project management (like Azure DevOps, Gitlab) to work. A journey from story board, persona, create HFM to Angular REST API, Node, Back end service, SPA to PWA!';
-export const DASHBOARD_ADDITIONAL_INVOLVEMENT_TITLE = 'Additional Involvements & Passion';
-export const DASHBOARD_TECHNICAL_TITLE = 'Technical';
+export const DASHBOARD_ADDITIONAL_INVOLVEMENT_TITLE = 'Hobbies and passion';
+export const DASHBOARD_BEST_CLIENTS_LOG = 'Gratitude for the work';
+export const DASHBOARD_TECHNICAL_TITLE = 'Recent works';
 export const DASHBOARD_TITLE2 =
-  'A UX-UI Designer & Developer, ';
+  'A UX-UI designer and developer, ';
 
 
 export const DASHBOARD_PARAGRAPH_QUOTE = `

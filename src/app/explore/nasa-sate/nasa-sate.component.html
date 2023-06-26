@@ -94,16 +94,16 @@
             <div class="row">
               <div class="col-md-5 col-xs-12">
                 <div *ngIf="data.is_potentially_hazardous_asteroid" class="text-danger">
-                  <div>Min Diameter: {{data.estimated_diameter.kilometers.estimated_diameter_min}} km</div>
-                  <div>Max Diameter: {{data.estimated_diameter.kilometers.estimated_diameter_max}} km</div>
+                  <div>Min Diameter: {{data.estimated_diameter.meters.estimated_diameter_min}} meters</div>
+                  <div>Max Diameter: {{data.estimated_diameter.meters.estimated_diameter_max}} meters</div>
                   <div *ngFor="let td of data.close_approach_data">
                     <div>Velocity: {{td.relative_velocity.kilometers_per_second}} km/Sec</div>
                     <div>Distance: {{td.miss_distance.kilometers}} km</div>
                   </div>
                 </div>
                 <div *ngIf="!data.is_potentially_hazardous_asteroid" class="text-dark">
-                  <div>Min Diameter: {{data.estimated_diameter.kilometers.estimated_diameter_min * 1000}} KM</div>
-                  <div>Max Diameter: {{data.estimated_diameter.kilometers.estimated_diameter_max}} KM</div>
+                  <div>Min Diameter: {{data.estimated_diameter.meters.estimated_diameter_min}} meters</div>
+                  <div>Max Diameter: {{data.estimated_diameter.meters.estimated_diameter_max}} meters</div>
                   <div *ngFor="let td of data.close_approach_data">
                     <div>Velocity: {{td.relative_velocity.kilometers_per_second}} km/Sec</div>
                     <div>Distance: {{ td.miss_distance.kilometers }}  KM</div>
@@ -120,9 +120,9 @@
                 </span>
                   <span class="object-x"
                   title="Astroid"
-                  [style.width]="data.estimated_diameter.feet.estimated_diameter_min * 1000 | nasaNumber"
-                  [style.height]="data.estimated_diameter.feet.estimated_diameter_min * 1000 | nasaNumber"
-                  [style.left]="td.miss_distance.kilometers | nasaNumber">
+                  [style.width]="data.estimated_diameter.feet.estimated_diameter_min | nasaNumber"
+                  [style.height]="data.estimated_diameter.feet.estimated_diameter_min | nasaNumber"
+                  [style.left]="td.miss_distance.kilometers * 10 | nasaNumber">
                   </span>
                   <small class="est-txt">*Estimated image view</small>
                 </div>

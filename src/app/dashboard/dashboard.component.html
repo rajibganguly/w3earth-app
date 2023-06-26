@@ -44,19 +44,19 @@
 <section class="container valign-wrapper">
   <app-sectiontwo></app-sectiontwo>
 </section>
-
 <hr>
-<section class="container-fluid">
+<section class="container valign-wrapper">
+  <app-tecnology-tab [techDetails]="techDetails"></app-tecnology-tab>
+</section>
+<hr>
+<section class="container-fluid" style="background: rgb(228 231 212 / 57%)">
   <div class="container">
     <p class="display-4"[innerHtml]="title"></p>
-    <button type="button" class="btn btn-info" [routerLink]="['/contact']">Check it now!</button>
+    <button type="button" class="btn btn-info" [routerLink]="['/contact']">Request for CV!</button>
   </div>
 </section>
 <hr>
 <div class="container">
   <app-sectionone></app-sectionone>
 </div>
-<hr>
-<section class="container valign-wrapper">
-  <app-tecnology-tab [techDetails]="techDetails"></app-tecnology-tab>
-</section>
+
