@@ -56,7 +56,19 @@
     }
   }
 
-
+}
+.route2mail {
+  background: blueviolet;
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  top: 103px;
+  left: -112px;
+  color: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+  &:hover {
+    left: 0;
+  }
 
 }
 
