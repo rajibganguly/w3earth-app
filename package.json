@@ -11,7 +11,8 @@
     "serve:ssr": "node dist/w3earth-app/server/main.js",
     "build:ssr": "ng build && ng run w3earth-app:server",
     "prerender": "ng run w3earth-app:prerender",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "app": "node server.js"
   },
   "private": true,
   "dependencies": {
