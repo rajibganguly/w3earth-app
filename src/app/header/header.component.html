@@ -1,13 +1,13 @@
 <nav class="fixed-top">
   <div class="nav-wrapper">
-    <a href="#" class="brand-logo right">
-      w3<span class="w3e">&lt;earth&gt;</span>
-    </a>
     <ul id="nav-mobile" class="left">
       <li><a *ngFor="let hd of header" title="{{hd.text}}" routerLink="{{hd.link}}">
         <!-- <i class="material-icons wd">{{hd.icon}}</i>  -->
         {{hd.label}}</a>
       </li>
     </ul>
+    <a href="#" class="brand-logo left">
+      w3<span class="w3e">&lt;earth&gt;</span>
+    </a>
   </div>
 </nav>
