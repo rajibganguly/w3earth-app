@@ -19,7 +19,7 @@ export const HEADER = [
   },
 ];
 
-export const CONTACTTITLE = "Discusstion or suggestions related to <strong>work</strong>!";
+export const CONTACTTITLE = "Discussion or suggestions related to <strong>work</strong>!";
 
 export const DASHBOARD_TITLE =
   'Front End (like Html. CSS, SASS, Bootstrap, Angular Js, ReactJs or Angular) with Cloud Back-end Service (like Kinvey/ Firebase/ AWS Amplify) and some essencial version control, reporting, SVG/Canvas, requirements management, project management (like Azure DevOps, Gitlab) to work. A journey from story board, persona, create HFM to Angular REST API, Node, Back end service, SPA to PWA!';
