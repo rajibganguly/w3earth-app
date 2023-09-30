@@ -18,9 +18,9 @@
           "image": "./assets/images/wbs/wbs_screen1.png",
           "description": "Aware Reference Architecture is a design methodology and approach to building highly reliable cloud-native applications on Microsoft Azure for business-critical and mission-critical workloads.",
           "alter": "wbs aware",
-          "responsibilities": "Set Requirement, details requirement gather for third party technical implementation, Demo and partial implementation of chat tools, understand inner application complexity and final bug fixing",
+          "responsibilities": "Connect to business lead, understand priority, set planning with team to build application. Create and setup Selenium into environment, working on performance testing, research for better live streaming tools and apply",
           "client": "Microsoft",
-          "software": "Technical Analysis, Design understanding from liveperson team, Front-end Development, Unit testing, Bug fixing, TOOLS: MS Office, HTML5/CSS3, Javascript, GIT, QC tool and others",
+          "software": "Understanding with client view, Unit test with Jest, Performance test with K6, Setup and create Automation test and add environment, Creating document in confluence, working with Angular V14, MSAL, Azure media service, function app, connect with cosmos DB and search Index",
           "moredetails": [
             {
               "image": "./assets/images/wbs/wbs_screen2.png",
