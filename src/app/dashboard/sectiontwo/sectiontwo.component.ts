@@ -77,6 +77,12 @@ export class SectiontwoComponent {
         alt: 'Mc.Graw Hill',
         designation: 'Software Development',
         details: 'HTML CSS, Wordpress, Joomla, Illustrator, Balsamiq, website'
+      },
+      {
+        img: './../../../assets/images/clients-logo/cl12.png',
+        alt: 'PamiTV US.',
+        designation: 'Full Stack Developer',
+        details: 'Angular, Node, Google wallet, Google analytics'
       }
     ]
   }
