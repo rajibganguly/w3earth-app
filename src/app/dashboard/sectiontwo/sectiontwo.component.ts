@@ -79,7 +79,7 @@ export class SectiontwoComponent {
         details: 'HTML CSS, Wordpress, Joomla, Illustrator, Balsamiq, website'
       },
       {
-        img: './../../../assets/images/clients-logo/cl12.png',
+        img: './../../../assets/images/clients-logo/cl12.jpg',
         alt: 'PamiTV US.',
         designation: 'Full Stack Developer',
         details: 'Angular, Node, Google wallet, Google analytics'
