@@ -16,6 +16,7 @@ import { DataService } from './data-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectiveNasaNumbersDirective } from './directive-nasa-numbers.directive';
+import { NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule } from 'ngx-google-analytics';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,8 @@ import { DirectiveNasaNumbersDirective } from './directive-nasa-numbers.directiv
     HttpClientModule,
     SharedModule,
     BrowserAnimationsModule,
+    NgxGoogleAnalyticsModule.forRoot('394592066'),
+    NgxGoogleAnalyticsRouterModule.forRoot()
   ],
   exports: [SharedModule, FormsModule],
   providers: [DataService],

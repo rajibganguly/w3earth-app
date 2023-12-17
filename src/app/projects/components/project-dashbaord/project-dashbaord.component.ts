@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { DataService } from 'src/app/data-service.service';
 import { ITopicsListed, ICards } from '../../interface/project.interface';
+import { GoogleAnalyticsService } from 'ngx-google-analytics';
 
 @Component({
   selector: 'app-project-dashbaord',
@@ -14,7 +15,7 @@ export class ProjectDashbaordComponent implements OnInit, OnDestroy {
   companiesAll: any[] = [];
   techDetails: ITechnologyDetails[] | any;
 
-  constructor(private dservice: DataService) {
+  constructor(private dservice: DataService, private _gaService: GoogleAnalyticsService) {
     this.techDetails = [
       {
         label: 'barclays',
@@ -25,6 +26,7 @@ export class ProjectDashbaordComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
+    this._gaService.pageView('/projects', 'Projects page')
     this.dservice.projectsAllDetails().subscribe((res: any) => {
       this.topicsListed = res;
     })

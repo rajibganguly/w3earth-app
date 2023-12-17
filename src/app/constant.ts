@@ -6,6 +6,18 @@ export const HEADER = [
     icon: 'assessment',
   },
   {
+    label: 'SERVICES',
+    link: './services',
+    text: 'Our service details',
+    icon: 'service',
+  },
+  {
+    label: 'PROCESS',
+    link: './process',
+    text: 'Step of process',
+    icon: 'process',
+  },
+  {
     label: 'EXPLORE',
     link: './explore',
     text: 'Lets explore more',

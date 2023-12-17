@@ -29,6 +29,16 @@ const routes: Routes = [
       import('./contact/contact.module').then((m) => m.ContactModule),
   },
   {
+    path: 'process',
+    loadChildren: () =>
+      import('./w3eprocess/w3eprocess.module').then((m) => m.W3eprocessModule),
+  },
+  {
+    path: 'services',
+    loadChildren: () =>
+      import('./w3eservices/w3eservices.module').then((m) => m.W3eservicesModule),
+  },
+  {
     path: '**',
     component: DashboardComponent
   },
