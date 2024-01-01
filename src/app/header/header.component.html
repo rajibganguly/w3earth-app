@@ -1,7 +1,13 @@
 <nav class="fixed-top">
-  <div class="nav-wrapper">
-    <ul id="nav-mobile" class="left">
+  <div class="nav-wrapper nav-bar-light">
+    <ul id="nav-mobile" class="left d-sm-none d-md-block">
       <li><a *ngFor="let hd of header" title="{{hd.text}}" routerLink="{{hd.link}}">
+        <!-- <i class="material-icons wd">1{{hd.icon}}</i>  -->
+        {{hd.label}}</a>
+      </li>
+    </ul>
+    <ul id="nav-mobile" class="left d-none d-sm-block d-md-none">
+      <li><a *ngFor="let hd of headerMob" title="{{hd.text}}" routerLink="{{hd.link}}">
         <!-- <i class="material-icons wd">{{hd.icon}}</i>  -->
         {{hd.label}}</a>
       </li>

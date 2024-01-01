@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { HEADER } from './../constant';
+import { HEADER, HEADER_MOB } from './../constant';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  header = HEADER;
+  header: any = HEADER;
+  headerMob: any = HEADER_MOB;
   constructor() {
 
    }

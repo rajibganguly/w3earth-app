@@ -31,6 +31,21 @@ export const HEADER = [
   },
 ];
 
+export const HEADER_MOB = [
+  {
+    label: 'PROJECTS',
+    link: './projects',
+    text: 'All projects related',
+    icon: 'assessment',
+  },
+  {
+    label: 'CONTACT',
+    link: './contact',
+    text: 'Connect now!',
+    icon: 'contactless',
+  },
+];
+
 export const CONTACTTITLE = "Discussion or suggestions related to <strong>work</strong>!";
 
 export const DASHBOARD_TITLE =
