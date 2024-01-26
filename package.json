@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "build": "ng build && nodemon server",
     "test": "ng test",
     "dev:ssr": "ng run w3earth-app:serve-ssr",
     "serve:ssr": "node dist/w3earth-app/server/main.js",
