@@ -28,7 +28,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.techDetails = res[0].data;
     });
     this.dataService.dashbaordcards().subscribe((res: any) => {
-      this.cardsDetailsInDashboard = res[0].data;
+      this.cardsDetailsInDashboard = res;
     })
   }
 

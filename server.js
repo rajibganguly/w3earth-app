@@ -15,13 +15,14 @@ app.get('/carddetails', async (req, res) => {
   try {
     const data = await fs.readFile('backend/dashboard-carddetails.json', 'utf-8');
     const cardData = JSON.parse(data);
-    console.log(cardData.data);
-    res.json(cardData.data);
+    res.status(200).json(cardData.data);
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
+
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
