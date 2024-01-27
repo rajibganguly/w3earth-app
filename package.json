@@ -5,14 +5,13 @@
     "ng": "ng",
     "start": "ng serve",
     "watch": "ng build --watch --configuration development",
-    "build": "ng build && nodemon server",
+    "build": "ng build",
     "test": "ng test",
     "dev:ssr": "ng run w3earth-app:serve-ssr",
     "serve:ssr": "node dist/w3earth-app/server/main.js",
     "build:ssr": "ng build && ng run w3earth-app:server",
     "prerender": "ng run w3earth-app:prerender",
-    "lint": "ng lint",
-    "app": "nodemon server.js"
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
