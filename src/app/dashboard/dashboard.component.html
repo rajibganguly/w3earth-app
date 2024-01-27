@@ -1,21 +1,7 @@
 <div class="container-fluid" style="height:auto;text-align: center;">
-  <img src="./../../assets/images/banner1.jpg" alt="bg banner" class="banner-Image-bg animate__animated animate__bounce" />
-  <img src="./../../assets/images/banner2.jpg" alt="bg banner" class="banner-Image-bg" />
-  <img src="./../../assets/images/banner3.jpg" alt="bg banner" class="banner-Image-bg animate__animated animate__bounce" />
-  <!-- <h1 class="animate__animated animate__bounce"><span class="col-black">{{pageTitleHello}}</span>{{pageTitle}}</h1> -->
-  <!-- <div class="boardskill">
-    <div *ngIf="canvasboarddata" class="">
-      <div *ngFor="let sty of canvasboarddata" class="boardskill_child" [style.background-color]="sty.backgroundColor"
-        [style.color]="sty.color" [style.width]="sty.size" [style.height]="sty.size" [style.left]="sty.xCordinate"
-        [style.top]="sty.yCordinate"><span [style.color]="sty.textColor"
-          [style.font-size]="sty.size">{{sty.title}}</span>
-      </div>
-    </div>
-  </div> -->
-  <!-- <img class="image img-fluid" src="././../../assets/images/frontImg.png" alt="" /> -->
-
+  <img [src]="todaysBanner" alt="bg banner" class="banner-Image-bg animate__animated animate__bounce" />
 </div>
-<div class="container-fluid">
+<div class="container">
   <!-- Dashbaord -->
   <div class="zambobox">
     <div class="row">
@@ -24,7 +10,7 @@
           <!-- <div class="Card-title p-4">{{card.title}}-{{card.nameOfAuthor}}</div> -->
           <div class="card-image">
             <img src="{{card.imagePath}}" class="animate__animated animate__bounce" alt="">
-            <!-- <span class="card-title">{{card.title}}</span> -->
+            <span class="card-title">{{card.title}}</span>
           </div>
           <div class="card-content">
             <p>{{card.description}}</p>
@@ -42,24 +28,26 @@
   </div>
 </div>
 
-<hr>
+
 <section class="container-fluid valign-wrapper whitebg">
   <div class="container">
     <app-sectiontwo></app-sectiontwo>
   </div>
 </section>
-<hr>
+
 <section class="container valign-wrapper">
     <app-tecnology-tab [techDetails]="techDetails"></app-tecnology-tab>
 </section>
-<hr>
-<section class="container-fluid" style="background: rgb(228 231 212 / 57%)">
+
+
+<section class="container mb-4 pb-2" style="background: rgb(228 231 212 / 57%)">
   <div class="container">
     <p class="display-4"[innerHtml]="title"></p>
     <button type="button" class="btn btn-info" [routerLink]="['/contact']">Request for CV!</button>
   </div>
 </section>
-<hr>
+
+
 <div class="container">
   <app-sectionone></app-sectionone>
 </div>

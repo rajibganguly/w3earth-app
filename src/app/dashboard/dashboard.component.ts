@@ -13,6 +13,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   cardsDetailsInDashboard: ICardsDetailsInDashboard[] | any;
   techDetails: ITechnologyDetails[] = [];
   canvasboarddata: IIntroData[] = [];
+  todaysBanner: string = "./../../assets/images/banner1.jpg"
 
   title = CONTACTTITLE;
   pageTitleHello: string = DASHBOARD_TITLE2;
@@ -30,7 +31,22 @@ export class DashboardComponent implements OnInit, OnDestroy {
     this.dataService.dashbaordcards().subscribe((res: any) => {
       this.cardsDetailsInDashboard = res;
     })
+
+    const currDate = new Date();
+    const number = currDate.getMinutes()
+    console.log(number)
+    if(number < 10) {
+      this.todaysBanner = "./../../assets/images/banner2.jpg"
+    } else if(number >= 10 && number < 30) {
+      this.todaysBanner = "./../../assets/images/banner3.jpg"
+    } else if(number >= 30 && number < 60) {
+      this.todaysBanner = "./../../assets/images/banner2.jpg"
+    } else {
+      this.todaysBanner = "./../../assets/images/banner1.jpg"
+    }
   }
+
+
 
   private getBannerCanvas(): any[] {
     let localData = [];

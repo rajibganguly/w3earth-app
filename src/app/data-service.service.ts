@@ -31,7 +31,7 @@ export class DataService {
 
   // Dashboard page Cards details on top
   dashbaordcards(): any {
-    return this.http.get(this.enviroment.dashboardCardDetails)
+    return this.http.get(`${this.enviroment.host}${this.enviroment.dashboardCardDetails}`)
   }
 
   // Dashboard page Cards details on top
