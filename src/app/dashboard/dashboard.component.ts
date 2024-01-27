@@ -39,10 +39,10 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.todaysBanner = "./../../assets/images/banner2.jpg"
     } else if(number >= 10 && number < 30) {
       this.todaysBanner = "./../../assets/images/banner3.jpg"
-    } else if(number >= 30 && number < 60) {
+    } else if(number >= 30 && number < 50) {
       this.todaysBanner = "./../../assets/images/banner2.jpg"
     } else {
-      this.todaysBanner = "./../../assets/images/banner1.jpg"
+      this.todaysBanner = "./../../assets/images/banner4.jpg"
     }
   }
 
