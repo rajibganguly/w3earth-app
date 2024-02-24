@@ -23,7 +23,7 @@
 
 .moon-on-bg {
     background-color: #000; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to right, #444 , #333, #010, #000);
+    //background-image: linear-gradient(to right, #444 , #333, #010, #000);
     color:#ccc;
     position: relative;
     padding: 20px;
@@ -54,7 +54,7 @@
     .object-world {
       width: 100px;
       height: 100px;
-      background: url('./../../../assets/images/world.png') no-repeat;
+      background: url('./../../../assets/images/world.gif') no-repeat;
       z-index: 4;
       display: inline-block;
       top: -2px;
