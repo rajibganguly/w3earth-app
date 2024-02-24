@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild, CUSTOM_ELEMENTS_SCHEMA, OnDestroy } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, CUSTOM_ELEMENTS_SCHEMA, OnDestroy, AfterViewInit } from '@angular/core';
 import { map, pipe } from 'rxjs';
 import { CONTACTTITLE, DASHBOARD_TITLE, DASHBOARD_TITLE2 } from '../constant';
 
@@ -9,11 +9,18 @@ import { DataService } from '../data-service.service';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
-export class DashboardComponent implements OnInit, OnDestroy {
+export class DashboardComponent implements OnInit, AfterViewInit {
   cardsDetailsInDashboard: ICardsDetailsInDashboard[] | any;
   techDetails: ITechnologyDetails[] = [];
   canvasboarddata: IIntroData[] = [];
-  todaysBanner: string = "./../../assets/images/banner1.jpg"
+  todaysBanner: string = ""
+  imageload: boolean = true
+  imageArr = [
+    "./../../assets/images/banner1.svg",
+    "./../../assets/images/banner2.svg",
+    "./../../assets/images/banner3.svg",
+    "./../../assets/images/banner4.svg"
+  ]
 
   title = CONTACTTITLE;
   pageTitleHello: string = DASHBOARD_TITLE2;
@@ -32,20 +39,21 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.cardsDetailsInDashboard = res;
     })
 
-    const currDate = new Date();
-    const number = currDate.getMinutes()
-    console.log(number)
-    if(number < 10) {
-      this.todaysBanner = "./../../assets/images/banner1.svg"
-    } else if(number >= 10 && number < 30) {
-      this.todaysBanner = "./../../assets/images/banner3.svg"
-    } else if(number >= 30 && number < 50) {
-      this.todaysBanner = "./../../assets/images/banner2.svg"
-    } else {
-      this.todaysBanner = "./../../assets/images/banner4.jpg"
-    }
+    this.setbannerContinue();
   }
 
+  private setbannerContinue() {
+    let currentImage: number = 0;
+    const interval  = setInterval(() => {
+      if(currentImage < this.imageArr.length) {
+        this.todaysBanner = this.imageArr[currentImage];
+        currentImage = currentImage + 1;
+      } else {
+        currentImage = 0;
+        //clearInterval(interval)
+      }
+    }, 5000)
+  }
 
 
   private getBannerCanvas(): any[] {
@@ -68,7 +76,27 @@ export class DashboardComponent implements OnInit, OnDestroy {
     })
   }
 
-  ngOnDestroy(): void {}
+
+  ngAfterViewInit(): void {
+      const imageArr = [
+        "./../../assets/images/banner1.svg",
+        "./../../assets/images/banner2.svg",
+        "./../../assets/images/banner3.svg",
+        "./../../assets/images/banner4.svg",
+        "./../../assets/images/banner1.svg",
+      ]
+
+      const currDate = new Date();
+      const number = currDate.getMinutes()
+      setTimeout(() => {
+        for(var i = 0; i<imageArr.length; i++) {
+          this.todaysBanner = imageArr[i]
+        }
+    })
+
+  }
+
+
 
 
 }
