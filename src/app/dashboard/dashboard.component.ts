@@ -36,11 +36,11 @@ export class DashboardComponent implements OnInit, OnDestroy {
     const number = currDate.getMinutes()
     console.log(number)
     if(number < 10) {
-      this.todaysBanner = "./../../assets/images/banner2.jpg"
+      this.todaysBanner = "./../../assets/images/banner1.svg"
     } else if(number >= 10 && number < 30) {
-      this.todaysBanner = "./../../assets/images/banner3.jpg"
+      this.todaysBanner = "./../../assets/images/banner3.svg"
     } else if(number >= 30 && number < 50) {
-      this.todaysBanner = "./../../assets/images/banner2.jpg"
+      this.todaysBanner = "./../../assets/images/banner2.svg"
     } else {
       this.todaysBanner = "./../../assets/images/banner4.jpg"
     }
@@ -68,9 +68,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
     })
   }
 
-  ngOnDestroy(): void {
-
-  }
+  ngOnDestroy(): void {}
 
 
 }

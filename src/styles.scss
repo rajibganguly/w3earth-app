@@ -4,6 +4,7 @@
 @import "./../node_modules/animate.css/animate.min.css";
 @import "./assets/materialize.scss";
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import "https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap";
 
 /* VARIABLE COLOR */
 $colorWhite: white;
@@ -13,6 +14,13 @@ $textColor: #616161;
   background: $col1;
   background: radial-gradient(circle, $col1 0%, $col2 100%);
 
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 }
 
 
@@ -224,7 +232,7 @@ $padding: 1em;
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Raleway", sans-serif;
   .pad {
     @include pad(y, 3em);
   }

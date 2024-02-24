@@ -1,0 +1,34 @@
+[
+  {
+    "data": [
+      {
+        "title": "Wireframe",
+        "description": "A screen blueprint, is a visual guide which provide a clear overview of the page structure, layout, information architecture, user flow, functionality, and intended behaviors.",
+        "imagePath": "./../../assets/images/zambobox-banner/testimonials.jpg",
+        "nameOfAuthor": "Behance",
+        "link": "https://www.behance.net/w3earth"
+      },
+      {
+        "title": "UI Dev.",
+        "description": "User Interface or Front end builds the front-end portion of websites/ web applications—that is, the part that users actually see and interact with backend or any cloud service datas.",
+        "imagePath": "./../../assets/images/zambobox-banner/testimonials2.jpg",
+        "nameOfAuthor": "G. Rajib",
+        "link": "https://w3earth.droppages.com/"
+      },
+      {
+        "title": "Data Science",
+        "description": "The challenges of sorting various kind of data into single display into frontend pages with help of Machine learning algorithms really solved problems and make less complicate front end code.",
+        "imagePath": "./../../assets/images/zambobox-banner/testimonials3.jpg",
+        "nameOfAuthor": "w3earth ML",
+        "link": "https://olympus.mygreatlearning.com/eportfolio"
+      },
+      {
+        "title": "Graphics",
+        "description": "It is a creatively balanced visual presentation of something with a purpose. It can be photos, images, illustrations, cartoons, callouts, infographics, and print media articles.",
+        "imagePath": "./../../assets/images/zambobox-banner/testimonials4.jpg",
+        "nameOfAuthor": "Coroflot",
+        "link": "https://coroflot.com/w3earth"
+      }
+    ]
+  }
+]

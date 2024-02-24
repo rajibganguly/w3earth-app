@@ -1,20 +1,55 @@
-<div class="container-fluid" style="height:auto;text-align: center;">
+<!-- <div class="container-fluid" style="height:auto;text-align: center;">
   <img [src]="todaysBanner" alt="bg banner" class="banner-Image-bg animate__animated animate__bounce" />
-</div>
+</div> -->
+<section class="py-5 text-center container dashboardcont">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light">Digital Creativity!</h1>
+      <img [src]="todaysBanner" alt="bg banner" class="banner-Image-bg animate__animated animate__bounce" />
+      <p class="lead text-body-secondary">Welcome to w3earth, the Epicenter of Digital Creativity! Elevate Your Vision with Our Design Wizards. Your Imagination, Our Expertise – Let's Craft Something Extraordinary Together!</p>
+      <p>
+        <a href="sms:+918217528181" class="w3earthBtn">Message Now</a>
+        <a href="#" class="w3earthBtn">Latest</a>
+      </p>
+    </div>
+  </div>
+</section>
 <div class="container">
   <!-- Dashbaord -->
   <div class="zambobox">
     <div class="row">
-      <div class="col-md-3 col-xs-12" *ngFor="let card of cardsDetailsInDashboard">
+      <div class="col-md-6 col-xs-12" *ngFor="let card of cardsDetailsInDashboard">
+
+        <!-- Card design -->
         <div class="card card-panel hoverable">
-          <!-- <div class="Card-title p-4">{{card.title}}-{{card.nameOfAuthor}}</div> -->
+          <h2 class="card-title m-3">{{card.title}}</h2>
           <div class="card-image">
             <img src="{{card.imagePath}}" class="animate__animated animate__bounce" alt="">
-            <span class="card-title">{{card.title}}</span>
           </div>
-          <div class="card-content">
+          <div class="card-content" style="min-height: 30rem">
             <p>{{card.description}}</p>
+            <hr />
+            <div style="display:flex; justify-content: space-between;align-content: flex-start;">
+              <h4 class="text-uppercase m-0">{{card.title1}}</h4>
+              <a [href]="card.certificate">Certificate</a>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-md-6">
+                <h5>{{card.title2}}</h5>
+                <ol>
+                  <li *ngFor="let st of card.steps">{{st}}</li>
+                </ol>
+              </div>
+              <div class="col-md-6">
+                <h5>{{card.title3}}</h5>
+                <ol class="lists">
+                  <li *ngFor="let soft of card.softwaretools">{{soft}}</li>
+                </ol>
+              </div>
+            </div>
           </div>
+
           <div class="card-action">
             <a [href]="card.link" class="text-primary">{{card.nameOfAuthor}}</a>
           </div>
