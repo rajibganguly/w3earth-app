@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { CONTACTTITLE } from 'src/app/constant';
 
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent  {
+
 
   constructor() { }
   title = CONTACTTITLE;
