@@ -19,7 +19,8 @@ export class DashboardComponent implements OnInit, AfterViewInit {
     "./../../assets/images/banner1.svg",
     "./../../assets/images/banner2.svg",
     "./../../assets/images/banner3.svg",
-    "./../../assets/images/banner4.svg"
+    "./../../assets/images/banner4.svg",
+    "./../../assets/images/1709407293036.jpg"
   ]
 
   title = CONTACTTITLE;
