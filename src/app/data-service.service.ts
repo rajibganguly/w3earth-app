@@ -34,6 +34,15 @@ export class DataService {
     return this.http.get(`${this.enviroment.host}${this.enviroment.dashboardCardDetails}`)
   }
 
+  // Lucky number
+  getLuckyNumber(str: string) {
+    const headers = {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'POST'
+    }
+    return this.http.post(`${this.enviroment.host}/luckyNumber/${str}`,{headers: headers})
+  }
+
   // Dashboard page Cards details on top
   introDataBanner(): Observable<IIntroData> {
     return this.http.get<IIntroData>(this.enviroment.introDetails);

@@ -26,12 +26,23 @@ export class AstrologyComponent implements OnInit {
   dataDetails: any;
   homeReturn = true;
   loader = false;
+  @ViewChild('firstName', { static: false }) firstName!: ElementRef;
+  finding: any;
 
   constructor(
     private service: DataService
     ) { }
 
   ngOnInit() {
+    console.log('loading')
+  }
+
+  myLuckyNumber() {
+    const value = this.firstName.nativeElement.value;
+    this.service.getLuckyNumber(value).subscribe((data) => {
+      console.log(data);
+      this.finding = data
+    })
   }
 
   changeSelect() {

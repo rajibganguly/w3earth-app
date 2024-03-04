@@ -30,6 +30,31 @@
       </div>
     </div>
 
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <h1 class="display-4">Find Lucky Number!</h1>
+        <p>
+          In numerology, a lucky number is often associated with a person's birthdate or derived from the numerical values
+           of their name. It's believed that certain numbers carry specific energies or vibrations that can influence a
+           person's life.
+        </p>
+        <h3 class="lead mb-4">
+          <ng-template [ngIf]="finding?.success" [ngIfElse]="elseBlock">
+            {{finding?.body}}
+          </ng-template>
+          <ng-template #elseBlock> Name = ?</ng-template>
+        </h3>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <img src="./../../../assets/images/logo.png" alt="w3earth" />
+        <div class="form-group">
+          <label for="selectRashi">Your lucky Number</label>
+          <input type="text" class="form-control" placeholder="Enter your first name" #firstName />
+          <button class="btn btn-light" (click)="myLuckyNumber()">Check now!</button>
+        </div>
+      </div>
+    </div>
+
 
     <div class="lead snowpaper" *ngIf="dataDetails">
       <h3>Result:</h3>
