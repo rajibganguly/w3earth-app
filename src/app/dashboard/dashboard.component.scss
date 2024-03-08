@@ -79,17 +79,28 @@
 
 }
 .route2mail {
-  background: blueviolet;
-  cursor: pointer;
   padding: 10px;
   position: fixed;
   top: 103px;
-  left: -112px;
-  color: #fff;
+  left: -580px;
   box-shadow: 0 0 8px rgba(0,0,0,0.15);
+  border-radius: 5px;
+  animation: messageBox 2s;
+  animation-iteration-count: 1;
   &:hover {
-    left: 0;
+    left: -5px;
   }
 
+}
+
+@keyframes messageBox {
+  0% {left: -10px;}
+  50% {left: -100px;}
+  100% {left: -580px; background: #fff;}
+}
+@-webkit-keyframes messageBox {
+  0% {left: -10px;}
+  50% {left: -100px;}
+  100% {left: -580px; background: #fff;}
 }
 
