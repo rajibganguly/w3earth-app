@@ -1,17 +1,26 @@
 <nav class="fixed-top">
   <div class="nav-wrapper nav-bar-light">
-    <ul id="nav-mobile" class="left d-sm-none d-md-block">
-      <li><a *ngFor="let hd of header" title="{{hd.text}}" routerLink="{{hd.link}}">
-        <!-- <i class="material-icons wd">1{{hd.icon}}</i>  -->
-        {{hd.label}}</a>
-      </li>
-    </ul>
-    <ul id="nav-mobile" class="left d-none d-sm-block d-md-none">
-      <li><a *ngFor="let hd of headerMob" title="{{hd.text}}" routerLink="{{hd.link}}">
-        <!-- <i class="material-icons wd">{{hd.icon}}</i>  -->
-        {{hd.label}}</a>
-      </li>
-    </ul>
+    <div id="nav-desktop posr">
+      <ul class="left d-sm-none d-md-block">
+        <li><a *ngFor="let hd of header" title="{{hd.text}}" routerLink="{{hd.link}}">
+          <!-- <i class="material-icons wd">1{{hd.icon}}</i>  -->
+          {{hd.label}}</a>
+        </li>
+      </ul>
+    </div>
+    <div id="nav-mobile posr">
+      <a class="navbar-toggler-icon d-none d-sm-block d-md-none" (click)="showMenu()" *ngIf="!showMenuFlg">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <ul class="left d-none d-sm-block d-md-none" *ngIf="showMenuFlg" (click)="showMenu()">
+        <li><a *ngFor="let hd of header" title="{{hd.text}}" routerLink="{{hd.link}}">
+          <!-- <i class="material-icons wd">{{hd.icon}}</i>  -->
+          {{hd.label}}</a>
+        </li>
+      </ul>
+    </div>
     <a href="#" class="brand-logo left">
       w3<span class="w3e">&lt;earth&gt;</span>
     </a>

@@ -8,8 +8,13 @@ import { HEADER, HEADER_MOB } from './../constant';
 export class HeaderComponent {
   header: any = HEADER;
   headerMob: any = HEADER_MOB;
+  showMenuFlg: boolean = false;
   constructor() {
 
+   }
+
+   showMenu() {
+    this.showMenuFlg = !this.showMenuFlg
    }
 
 }

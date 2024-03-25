@@ -1,4 +1,5 @@
 //Default styles
+@import "https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@400&display=swap";
 
 $black: #000;
 
@@ -55,6 +56,13 @@ a {
     background: rgba(255, 255, 255, 0.85)
   }
 }
+
+.brand-logo {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  letter-spacing: -1px;
+  }
 
 
 // classic clearfix
