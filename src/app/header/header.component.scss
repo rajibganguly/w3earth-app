@@ -16,15 +16,30 @@ nav .nav-wrapper {
     position: absolute;
     top: 23px;
     right: 0px;
-    width: 35px;
+    width: 30px;
     span {
       background: #333;
-      width: 25px;
-      height: 5px;
+      width: 17px;
+      height: 3px;
       display: block;
       margin: 0 0px 2px 0;
       cursor:pointer
     }
+  }
+}
+
+.mobileMenu {
+  position: absolute;
+  width: 125px;
+  height:100vh;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  background: rgba(211, 177, 249, 0.6);
+  li {
+    position:relative;
+    width:100%;
+    display:block
   }
 }
 
